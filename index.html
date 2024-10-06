@@ -191,8 +191,174 @@
         <link rel="preload" href="chunks/styles.11189fa64e4b8233f8ed.js" as="script"/>
         <link rel="preload" href="runtime/main-40b9866dd1d60037a278.js" as="script"/>
         <link rel="modulepreload" as="script" href="https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js">
+
+        <style>
+            .open-modal-btn {
+              background-color: #004f9e;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              color: #fff;
+              margin-bottom: 20px;
+            }
+            .open-modal-btn:hover {
+              background-color: #002951;
+            }
+          
+            .registration-container {
+              background: white;
+              max-width: 400px;
+              width: 90%;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 10000001;
+            }
+          
+            .registration-header {
+              padding: 20px 0px;
+            }
+          
+            .close-btn {
+              background: #000;
+              color: #fff;
+              border: none;
+              font-size: 20px;
+              cursor: pointer;
+              float: right;
+            }
+
+            button.close-btn {
+                color: #000000;
+                background: transparent;
+                font-size: 50px;
+                position: relative;
+                top: -30px;
+                right: -20px;
+            }
+          
+            .form-group {
+              margin-bottom: 20px;
+            }
+          
+            .form-group label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+              color: #333;
+            }
+          
+            .form-group input {
+              width: calc(100% - 20px);
+              padding: 10px;
+              margin: 0 auto;
+              display: block;
+              font-size: 14px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+          
+            .form-group input:focus {
+              outline: none;
+              border-color: #888;
+            }
+          
+            .submit-btn {
+              background-color: #009fd6!important;
+              border: none;
+              color: #fff;
+              padding: 20px 20px !important;
+              font-size: 17px !important;
+              border-radius: 0px !important;
+              letter-spacing: 0px !important;
+              cursor: pointer;
+              width: 100%;
+              font-weight: bold;
+            }
+          
+            .submit-btn:hover {
+              background-color: #002951;
+            }
+          
+            /* Overlay styles */
+            .overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #010608f1;
+              z-index: 100000;
+            }
+          </style>
+
+
     </head>
+    
     <body class="custom_class">
+        <!-- Registration container -->
+<div class="registration-container" id="registration-modal">
+    <div class="registration-header">
+      <button class="close-btn" onclick="closeRegistration()">×</button>
+    </div>
+    
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="email">Emailadresse:</label>
+        <input type="email" id="email" name="email" placeholder="Emailadresse eingeben" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="username">Benutzername:</label>
+        <input type="text" id="username" name="username" placeholder="Benutzernamen wählen" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" placeholder="Passwort wählen" required>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Registrieren</button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Overlay for modal background -->
+  <div class="overlay" id="modal-overlay"></div>
+
+<script>
+    // Open the registration modal and show the overlay
+    function openRegistration() {
+      document.getElementById('registration-modal').style.display = 'block';
+      document.getElementById('modal-overlay').style.display = 'block';
+    }
+  
+    // Close the registration modal and hide the overlay
+    function closeRegistration() {
+      document.getElementById('registration-modal').style.display = 'none';
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
+  
+    // Form submission logic
+    document.getElementById('registration-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form submission
+  
+      alert('Registrierung erfolgreich! Wir werden uns in Kürze mit Ihnen in Verbindung setzen.');
+  
+      closeRegistration(); // Close modal after successful registration
+    });
+  </script>
+
         <div id="__next">
             <div id="site-container" class="site-container site-container-de-DE   ">
                 <div id="beam-mobile" class="rgbeam-header mobile">
@@ -240,8 +406,8 @@
                                 <img src="images/newlogoprofi.png" alt="LuckyMe Slots"/>
                             </span>
                         </a>
-                        <button id="login-header" class="clean">registrieren</button>
-                        <button id="join-header" class="special" type="button">
+                        <button id="login-header" class="clean" onclick="openRegistration()">registrieren</button>
+                        <button id="join-header" class="special" type="button"  onclick="openRegistration()">
                             <div>
                                 <span>Jetzt einloggen</span>
                                 <span class="rounded-circle negative-white-but">
@@ -250,96 +416,8 @@
                             </div>
                         </button>
                     </header>
-                    <a role="button" aria-label="Close Menu" id="menu-X"></a>
-                    <nav id="top-nav">
-                        <div class="menu-promotion">
-                            <a class="hvr-shrink">
-                                <img src="/img/main-nav/menu1_de-DE.jpg" alt="Lucky Me Slots"/>
-                            </a>
-                        </div>
-                        <div class="navbar">
-                            <ul id="main-nav">
-                                <li class>
-                                    <a href="/about-us/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>Über uns</span>
-                                    </a>
-                                </li>
-                                <li class>
-                                    <a href="/promotions/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>Aktionen</span>
-                                    </a>
-                                </li>
-                                <li class>
-                                    <a href="/contact/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>Kontakt</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/spieleliste/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>Unsere Spiele</span>
-                                    </a>
-                                    <ul class="navbar-text ml-4 ptb">
-                                        <li>
-                                            <a href="/spieleliste/">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <span>Spieleliste</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="/daily-tournaments/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>Unsere Features</span>
-                                    </a>
-                                    <ul class="navbar-text ml-4 ptb">
-                                        <li>
-                                            <a href="/daily-tournaments/">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <span>Tägliche Turniere</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/daily-promotions/">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <span>Tägliche Promotionen</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/quick-cashouts/">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <span>Schnelle Auszahlung</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class>
-                                    <a href="/vip-lounge/">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <span>VIP-Lounge</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a role="button" id="nav-bar-login">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        Jetzt einloggen
-                                    </a>
-                                </li>
-                                <li>
-                                    <a role="button" id="nav-bar-login">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        registrieren
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
                 </div>
-                <section id="slider-container" class="slider-line full-size-row"><div class="slider-pc"><div class="bg-img-holder"><div><picture><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-8098eb8915f21a14c9efefd6277ffc11.jpg.webp" type="image/webp"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a3261106de6444c8353a56a35280c69.jpg.webp" type="image/webp"><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-418337e58e995097592734489097ed45.jpg"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg"><img class="banner-bg" src="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg" alt="Online Slot Games | LuckyMe Slots"></picture></div><img class="mobile-legal" alt="Legal" src="images/de-DE-b7decaa617c03e6d0b5fba915e687cc1.png"></div><div class="offer"><picture><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e34078729f7bbfb401f59f9be09e370f.png.webp" type="image/webp"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-40d82c3f21db2797c00a80fdb87eb621.png.webp" type="image/webp"><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e61b18a88e426c599a5d0a98cd70efe8.png"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-6eb545ca58752046783aeda433b48cbe.png"><img src="images/de-DE-6eb545ca58752046783aeda433b48cbe.png" alt="Online Slot Games | LuckyMe Slots" class="desktop-front reveal"></picture><button class="special offer-but cms-txt cms-txt-3"><div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span></div></button></div><div class="banner-legal cms-txt cms-txt-4" data-nosnippet="true"><div class="text cms-txt-content">Wird bei der Einzahlung automatisch gutgeschrieben. Stornierung kann angefordert werden. Nur die erste Einzahlung. Min. Einzahlung: €10. Spiel: Book of Dead, Spielwert: €0.1. Einsatzanforderung: Innerhalb von 30 Tagen 60 Mal den Freispiel-Gewinnbetrag setzen (nur Spielautomaten zählen). Der maximale Einsatz sind 10 % (min. 0,10 €) des Freispiel-Gewinnbetrags oder 5 € (geringster Betrag gilt). Die Spiele müssen vor der Verwendung von eingezahltem Guthaben gespielt werden. Einzahlungs-/ Willkommensboni dürfen nur einmal innerhalb von 72 Stunden bei allen Betreibern beansprucht werden. <a href="/bonus-policy/">Es gelten die Bonusbedingungen.</a>.</div><img alt="Legal" src="images/de-DE-1f570a62ad6c827e573a19f4fc15acf1.png"></div></div></section>
+                <section id="slider-container" class="slider-line full-size-row"><div class="slider-pc"><div class="bg-img-holder"><div><picture><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-8098eb8915f21a14c9efefd6277ffc11.jpg.webp" type="image/webp"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a3261106de6444c8353a56a35280c69.jpg.webp" type="image/webp"><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-418337e58e995097592734489097ed45.jpg"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg"><img class="banner-bg" src="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg" alt="Online Slot Games | LuckyMe Slots"></picture></div><img class="mobile-legal" alt="Legal" src="images/de-DE-b7decaa617c03e6d0b5fba915e687cc1.png"></div><div class="offer"><picture><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e34078729f7bbfb401f59f9be09e370f.png.webp" type="image/webp"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-40d82c3f21db2797c00a80fdb87eb621.png.webp" type="image/webp"><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e61b18a88e426c599a5d0a98cd70efe8.png"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-6eb545ca58752046783aeda433b48cbe.png"><img src="images/de-DE-6eb545ca58752046783aeda433b48cbe.png" alt="Online Slot Games | LuckyMe Slots" class="desktop-front reveal"></picture><button class="special offer-but cms-txt cms-txt-3"  onclick="openRegistration()"><div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span></div></button></div><div class="banner-legal cms-txt cms-txt-4" data-nosnippet="true"><div class="text cms-txt-content">Wird bei der Einzahlung automatisch gutgeschrieben. Stornierung kann angefordert werden. Nur die erste Einzahlung. Min. Einzahlung: €10. Spiel: Book of Dead, Spielwert: €0.1. Einsatzanforderung: Innerhalb von 30 Tagen 60 Mal den Freispiel-Gewinnbetrag setzen (nur Spielautomaten zählen). Der maximale Einsatz sind 10 % (min. 0,10 €) des Freispiel-Gewinnbetrags oder 5 € (geringster Betrag gilt). Die Spiele müssen vor der Verwendung von eingezahltem Guthaben gespielt werden. Einzahlungs-/ Willkommensboni dürfen nur einmal innerhalb von 72 Stunden bei allen Betreibern beansprucht werden. <a href="/bonus-policy/">Es gelten die Bonusbedingungen.</a>.</div><img alt="Legal" src="images/de-DE-1f570a62ad6c827e573a19f4fc15acf1.png"></div></div></section>
 
                 <section class="games-hp-line full-size-row"><div class="games-hp-line-inner"><div class="area-wrapper games-hp-wrapper"><h2>Über 1000 Slot-Spiele</h2><div id="games-hp"><div class="game-box"><div class="img-wrap"><img src="https://www.luckymeslots.de/api/homepage-games/fg-9543.jpg" alt="Book of Dead"></div><div class="game-name"><div class="game-logo animated" style="background-image: url(&quot;https://www.luckymeslots.de/api/homepage-games/logo-9543.jpg&quot;);"></div><div class="game-cta animated fadeIn"><button class="special"><div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span></div></button><div><a href="/online-slots/book-of-dead/" class="game-link" role="button">Book of Dead</a></div></div></div><div class="mobile-game-name"><div><a href="/online-slots/book-of-dead/" class="game-link" role="button">Book of Dead</a></div></div></div><div class="game-box"><div class="img-wrap"><img src="https://www.luckymeslots.de/api/homepage-games/fg-9928.jpg" alt="Fire Joker Freeze"></div><div class="game-name"><div class="game-logo animated" style="background-image: url(&quot;https://www.luckymeslots.de/api/homepage-games/logo-9928.jpg&quot;);"></div><div class="game-cta animated fadeIn"><button class="special"><div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span></div></button><div><a href="/online-slots/fire-joker-freeze/" class="game-link" role="button">Fire Joker Freeze</a></div></div></div><div class="mobile-game-name"><div><a href="/online-slots/fire-joker-freeze/" class="game-link" role="button">Fire Joker Freeze</a></div></div></div></div></div></div></section>
                 <section class="features-line full-size-row">
