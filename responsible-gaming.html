@@ -1,650 +1,887 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Profi Casino ist ein führendes Online-Spielhalle für Slots. Holen Sie sich 10 FREISPIELE zum Spielen &amp; Gewinnen!">
 
-<head>
-    <script id="son-webcomponents">
-        (function(w, d){
-            function loadScript(){
-                var f=d.getElementsByTagName('script')[0],
-                j=d.createElement('script');
-                j.type = 'module';
-                j.src = 'https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js';
-                f.parentNode.insertBefore(j, f);
+
+        <!-- ================ Title & Fav ============================ -->
+        <title>Verantwortungsvolles Spielen | Profi Casino</title>
+        <link rel="shortcut icon" href="images/free_games.png" type="image/x-icon">
+
+
+        <!-- ================ Google Fonts & Icon Link ====================== -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preload" href="https://fonts.gstatic.com/s/rosario/v18/xfuz0WDhWW_fOEoY2FbNzybH.woff2" as="font" type="font/woff2" crossorigin="true"/>
+        <link rel="preload" href="https://fonts.gstatic.com/s/rosario/v18/xfux0WDhWW_fOEoY2FP9zQ.woff2" as="font" type="font/woff2" crossorigin="true"/>
+        <link rel="preload" href="/css/fonts/awesome-4/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin="true"/>
+        
+
+        <!-- ================= Custom CSS Link ============================= -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/css2.css">
+        
+
+        <!-- ================= Script ======================================= -->
+        <script id="son-webcomponents">
+            (function(w, d) {
+                function loadScript() {
+                    var f = d.getElementsByTagName('script')[0]
+                      , j = d.createElement('script');
+                    j.type = 'module';
+                    j.src = 'https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js';
+                    f.parentNode.insertBefore(j, f);
+                }
+                if ('requestIdleCallback'in window) {
+                    var webcomponentsRequestIdleCallback = requestIdleCallback(loadScript, {
+                        timeout: 10000
+                    });
+                } else {
+                    loadScript()
+                }
             }
-            if('requestIdleCallback' in window){
-                var webcomponentsRequestIdleCallback = requestIdleCallback(loadScript, { timeout: 10000 });
-            }else{
-                loadScript()
-            }
-        })(window, document);
-    </script>
-    <script id="son-config">
-        var sonDeepFreeze = function(obj){
-            Object.keys(obj).forEach(function(property){
-                  if ((typeof obj[property] === "object" || Array.isArray(obj[property])) && !Object.isFrozen(obj[property])){
-                      sonDeepFreeze(obj[property]);
-                  } 
+            )(window, document);
+        </script>
+
+        <script id="son-config">
+            var sonDeepFreeze = function(obj) {
+                Object.keys(obj).forEach(function(property) {
+                    if ((typeof obj[property] === "object" || Array.isArray(obj[property])) && !Object.isFrozen(obj[property])) {
+                        sonDeepFreeze(obj[property]);
+                    }
+                });
+                return Object.freeze(obj);
+            };
+            Object.defineProperty(window, 'SON_CONFIG', {
+                value: sonDeepFreeze({
+                    "skin": "LuckyMeSlots.dl",
+                    "displayName": "LuckyMeSlots",
+                    "license": "DL",
+                    "family": "LuckyMeSlots",
+                    "abbrev": "lms-dl",
+                    "cookie_consent": {
+                        "name": "son_consent",
+                        "version": 1,
+                        "categories": [{
+                            "name": "necessary",
+                            "checked": true,
+                            "needed": true,
+                            "wanted": true
+                        }, {
+                            "name": "functionality",
+                            "checked": false,
+                            "needed": false,
+                            "wanted": true
+                        }, {
+                            "name": "tracking",
+                            "checked": false,
+                            "needed": false,
+                            "wanted": true
+                        }, {
+                            "name": "targeting",
+                            "checked": false,
+                            "needed": false,
+                            "wanted": true
+                        }],
+                        "enabled": true
+                    },
+                    "gtm": null,
+                    "gtm_layername": "dataLayer",
+                    "locale": "DE",
+                    "lang": "de",
+                    "lang_id": 8,
+                    "gth_lang_id": 8,
+                    "segments": ["de", "de-DE", "de-de"],
+                    "affiliate": "10028169",
+                    "dynid": "588b97b6-dad8-4379-92df-c7f03da8925e",
+                    "zoneid": "1",
+                    "currency": {
+                        "currency_id": 2,
+                        "code": "EUR",
+                        "symbol": "€",
+                        "symbol_place": "before",
+                        "country": "*",
+                        "rate": 1,
+                        "currency_separator": ",",
+                        "currency_decimal": "."
+                    },
+                    "apps": {
+                        "enabled": false,
+                        "ios": {
+                            "id": "1559434494",
+                            "available": false,
+                            "team_id": "DA8PHQG532",
+                            "bundle_id": "com.luckymeslots.skillonet",
+                            "aths": false,
+                            "url": ""
+                        },
+                        "android": {
+                            "available": false,
+                            "id": "com.luckymeslots.www",
+                            "ais": false,
+                            "aths": false,
+                            "url": ""
+                        }
+                    },
+                    "analytics": false,
+                    "registration_token": "7e6f4490-bda6-4555-ae69-feb92da52bb6",
+                    "client_type": "subdomain",
+                    "support_email": "",
+                    "interstitial": false,
+                    "registeredUser": false,
+                    "pnp": {
+                        "enabled": false,
+                        "payments": [],
+                        "pnp_payments_extra": false
+                    },
+                    "restrictions": true,
+                    "domain": "luckymeslots.de",
+                    "cta": {
+                        "url": ["https://www.playuzu.mx/mx", "https://www.drueckglueck.com/de/", "https://www.playuzu.mx/specials/uzuvip-new", "https://www.luckyniki.de/vip/vip-punkte/", "https://www.luckyniki.de/niki/social/", "https://www.playuzu.com/cl/juegos/", "https://www.playuzu.com/juegos/", "https://www.playuzu.mx/juegos/", "https://www.playuzu.com/pe/juegos/", "https://www.playuzu.es/juegos/"]
+                    },
+                    "country_name": "BANGLADESH",
+                    "device": "desktop",
+                    "isMobile": false,
+                    "os": "Windows",
+                    "browser": "Chrome",
+                    "origin": "https://www.luckymeslots.de",
+                    "resources": "https://service.image-tech-storage.com/workers",
+                    "isDev": false,
+                    "country": "BD",
+                    "regionCode": "C",
+                    "city": "Dhaka",
+                    "sub": "www",
+                    "tld": "de",
+                    "webcomponents": "https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js"
+                }),
+                writable: false
             });
-            return Object.freeze(obj);
-          };
-        Object.defineProperty(window, 'SON_CONFIG', {
-            value: sonDeepFreeze({"skin":"LuckyMeSlots.dl","displayName":"LuckyMeSlots","license":"DL","family":"LuckyMeSlots","abbrev":"lms-dl","cookie_consent":{"name":"son_consent","version":1,"categories":[{"name":"necessary","checked":true,"needed":true,"wanted":true},{"name":"functionality","checked":true,"needed":false,"wanted":true},{"name":"tracking","checked":true,"needed":false,"wanted":true},{"name":"targeting","checked":true,"needed":false,"wanted":true}],"enabled":false},"gtm":null,"gtm_layername":"dataLayer","locale":"DE","lang":"de","lang_id":8,"gth_lang_id":8,"segments":["de","de-DE","de-de"],"affiliate":"10028169","dynid":"588b97b6-dad8-4379-92df-c7f03da8925e","zoneid":"1","currency":{"currency_id":2,"code":"EUR","symbol":"€","symbol_place":"before","country":"*","rate":1,"currency_separator":",","currency_decimal":"."},"apps":{"enabled":false,"ios":{"id":"1559434494","available":false,"team_id":"DA8PHQG532","bundle_id":"com.luckymeslots.skillonet","aths":false,"url":""},"android":{"available":false,"id":"com.luckymeslots.www","ais":false,"aths":false,"url":""}},"analytics":false,"registration_token":"7e6f4490-bda6-4555-ae69-feb92da52bb6","client_type":"subdomain","support_email":"","interstitial":false,"registeredUser":false,"pnp":{"enabled":false,"payments":[],"pnp_payments_extra":false},"restrictions":true,"domain":"luckymeslots.de","cta":{"url":["https://www.playuzu.mx/mx","https://www.drueckglueck.com/de/","https://www.playuzu.mx/specials/uzuvip-new","https://www.luckyniki.de/vip/vip-punkte/","https://www.luckyniki.de/niki/social/","https://www.playuzu.com/cl/juegos/","https://www.playuzu.com/juegos/","https://www.playuzu.mx/juegos/","https://www.playuzu.com/pe/juegos/","https://www.playuzu.es/juegos/"]},"country_name":"BANGLADESH","device":"desktop","isMobile":false,"os":"Windows","browser":"Chrome","origin":"https://www.luckymeslots.de","resources":"https://service.image-tech-storage.com/workers","isDev":false,"country":"BD","regionCode":"C","city":"Dhaka","sub":"www","tld":"de","webcomponents":"https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js"}),
-            writable: false
-        });
-    </script>
-    <link rel="stylesheet" href="css/css2.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico" />
-    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://www.primeapi.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preload" href="https://fonts.gstatic.com/s/rosario/v18/xfuz0WDhWW_fOEoY2FbNzybH.woff2" as="font" type="font/woff2" crossorigin="true" />
-    <link rel="preload" href="https://fonts.gstatic.com/s/rosario/v18/xfux0WDhWW_fOEoY2FP9zQ.woff2" as="font" type="font/woff2" crossorigin="true" />
-    <link rel="preload" href="/css/fonts/awesome-4/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin="true" />
-    <meta name="apple-touch-fullscreen" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Expo" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width" />
-    <meta charSet="utf-8" />
-    <title>Zusätzliche Richtlinien | LuckyMe Slots</title>
-    <meta name="description" content="Spiele mehr als 1500 der besten Rubbellose, Slot &amp; Spielhalle Games nur bei LuckyMe Slots. Melde dich noch heute an und du erhältst exklusiven Zugang zu Boni, Sonderaktionen sowie den aktuellsten Spieletiteln."
-    />
-    <link rel="canonical" href="https://www.luckymeslots.de/privacy/" />
-    <link rel="alternate" hrefLang="x-default" href="https://www.luckymeslots.com/privacy/" />
-    <link rel="alternate" hrefLang="en-CA" href="https://www.luckymeslots.com/en-CA/privacy/" />
-    <link rel="alternate" hrefLang="en-IN" href="https://www.luckymeslots.com/en-IN/privacy/" />
-    <link rel="alternate" hrefLang="en-NZ" href="https://www.luckymeslots.com/en-NZ/privacy/" />
-    <link rel="alternate" hrefLang="fi" href="https://www.luckymeslots.com/fi/privacy/" />
-    <link rel="alternate" hrefLang="nb-NO" href="https://www.luckymeslots.com/nb-NO/privacy/" />
-    <link rel="alternate" hrefLang="de-DE" href="https://www.luckymeslots.de/privacy/" />
-    <link rel="alternate" hrefLang="en-GB" href="https://www.luckymeslots.co.uk/privacy/" />
-    <link rel="alternate" hrefLang="da" href="https://www.luckymeslots.dk/privacy/" />
-    <link rel="alternate" hrefLang="sv" href="https://se.luckymeslots.com/privacy/" />
-    <meta name="next-head-count" content="15" />
-    <link rel="preload" href="/_next/static/css/e5c378719fae93a8cce2095769f6c1763d436826_CSS.2a517d74.chunk.css" as="style" />
-    <link rel="stylesheet" href="/_next/static/css/e5c378719fae93a8cce2095769f6c1763d436826_CSS.2a517d74.chunk.css" />
-    <link rel="preload" href="/_next/static/css/styles.ce423222.chunk.css" as="style" />
-    <link rel="stylesheet" href="/_next/static/css/styles.ce423222.chunk.css" />
-    <link rel="preload" href="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/pages/_app.js" as="script" />
-    <link rel="preload" href="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/pages/FeedPage.js" as="script" />
-    <link rel="preload" href="/_next/static/runtime/webpack-d1488723af9111add9bd.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/framework.10d288861140c55ee8f8.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/8313d723.2fff9a0ee815729e0be8.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/7a285dac885c6cc212bc7354f408acc1c6b2d3c8.4bf9aa1727c91ffaf38b.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/fab5a8f56c9f17811268a09fcc68c67bdc6aa6ba.35be84d0b8b18450cefa.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/79cba62d236b9fcfb06022d03069d04ad1596fff.ffa8b0d8aacbba058544.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/fbcbc21c835aa760778198ca84e79095489380f5.372c432ce215772a7de3.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/0789fb2cedf608f83f6fad13eac5551cb96a53eb.b15bf0257327b13a4ac8.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/e5c378719fae93a8cce2095769f6c1763d436826_CSS.4f570b4baecd3a67b496.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/e5c378719fae93a8cce2095769f6c1763d436826.6aa37b7d3962e286d9a6.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/styles.11189fa64e4b8233f8ed.js" as="script" />
-    <link rel="preload" href="/_next/static/runtime/main-40b9866dd1d60037a278.js" as="script" />
-    <link rel="modulepreload" as="script" href="https://service.image-tech-storage.com/workers/webcomponents.6dd12b83.js">
-</head>
+        </script>
 
-<body class="custom_class">
-    <div id="__next">
-        <div id="site-container" class="site-container site-container-de-DE   ">
-            <div id="beam-mobile" class="rgbeam-header mobile">
-                <son-beam begambleaware="light" responsible-link="/responsible-gaming/" bonus-policy-link="/bonus-policy/"></son-beam><span><style>:root {--beam-background: #2F3F50; --beam-font-size: 14px;--beam-padding: 0; img: max-height: 30px} @media screen and (max-width: 767px) {:root {--beam-font-size: 12px;} }</style></span></div>
-            <div class="header-sticky">
-                <div id="beam-desktop" class="rgbeam-header desktop">
-                    <son-beam begambleaware="light" responsible-link="/responsible-gaming/" bonus-policy-link="/bonus-policy/"></son-beam><span><style>:root {--beam-background: #2F3F50; --beam-font-size: 14px;--beam-padding: 0; img: max-height: 30px} @media screen and (max-width: 767px) {:root {--beam-font-size: 12px;} }</style></span></div>
-                <header class="header-line  full-size-row"><a class="logo hvr-shrink" href="/"><span><img src="images/newlogoprofi.png" alt="LuckyMe Slots" /></span></a>
-                    <button id="login-header" class="clean">registrieren</button>
-                    <button id="join-header" class="special" type="button">
-                        <div><span>Jetzt einloggen</span><span class="rounded-circle negative-white-but"><span class="triangle"></span></span>
-                        </div>
-                    </button>
-                </header>
-                <a role="button" aria-label="Close Menu" id="menu-X"></a>
-                <nav id="top-nav">
-                    <div class="menu-promotion">
-                        <a class="hvr-shrink"><img src="/img/main-nav/menu1_de-DE.jpg" alt="Lucky Me Slots" /></a>
-                    </div>
-                    <div class="navbar">
-                        <ul id="main-nav">
-                            <li class><a href="/about-us/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Über uns</span></a></li>
-                            <li class><a href="/promotions/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Aktionen</span></a></li>
-                            <li class><a href="/contact/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Kontakt</span></a></li>
-                            <li><a href="/spieleliste/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Unsere Spiele</span></a>
-                                <ul class="navbar-text ml-4 ptb">
-                                    <li><a href="/spieleliste/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Spieleliste</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/daily-tournaments/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Unsere Features</span></a>
-                                <ul class="navbar-text ml-4 ptb">
-                                    <li><a href="/daily-tournaments/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Tägliche Turniere</span></a></li>
-                                    <li><a href="/daily-promotions/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Tägliche Promotionen</span></a></li>
-                                    <li><a href="/quick-cashouts/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>Schnelle Auszahlung</span></a></li>
-                                </ul>
-                            </li>
-                            <li class><a href="/vip-lounge/"><i class="fa fa-angle-right" aria-hidden="true"></i><span>VIP-Lounge</span></a></li>
-                            <li><a role="button" id="nav-bar-login"><i class="fa fa-angle-right" aria-hidden="true"></i>Jetzt einloggen</a></li>
-                            <li><a role="button" id="nav-bar-login"><i class="fa fa-angle-right" aria-hidden="true"></i>registrieren</a></li>
-                        </ul>
-                    </div>
-                </nav>
+
+        <!-- ================= Internal Popup CSS ========================= -->
+        <style>
+            .open-modal-btn {
+              background-color: #004f9e;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              color: #fff;
+              margin-bottom: 20px;
+            }
+
+            .open-modal-btn:hover {
+              background-color: #002951;
+            }
+          
+            .registration-container {
+              background: white;
+              max-width: 400px;
+              width: 90%;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 10000001;
+            }
+          
+            .registration-header {
+              padding: 20px 0px;
+            }
+          
+            .close-btn {
+              background: #000;
+              color: #fff;
+              border: none;
+              font-size: 20px;
+              cursor: pointer;
+              float: right;
+            }
+
+            button.close-btn {
+                color: #000000;
+                background: transparent;
+                font-size: 50px;
+                position: relative;
+                top: -30px;
+                right: -20px;
+            }
+          
+            .form-group {
+              margin-bottom: 20px;
+            }
+          
+            .form-group label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+              color: #333;
+            }
+          
+            .form-group input {
+              width: calc(100% - 20px);
+              padding: 10px;
+              margin: 0 auto;
+              display: block;
+              font-size: 14px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+          
+            .form-group input:focus {
+              outline: none;
+              border-color: #888;
+            }
+          
+            .submit-btn {
+              background-color: #009fd6!important;
+              border: none;
+              color: #fff;
+              padding: 20px 20px !important;
+              font-size: 17px !important;
+              border-radius: 0px !important;
+              letter-spacing: 0px !important;
+              cursor: pointer;
+              width: 100%;
+              font-weight: bold;
+            }
+          
+            .submit-btn:hover {
+              background-color: #002951;
+            }
+          
+            .overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #010608f1;
+              z-index: 100000;
+            }
+        </style>
+    </head>
+
+    <body class="custom_class">
+        <!-- ==================== Registration PopUp Html & JS Start ====================== -->
+        <div class="registration-container" id="registration-modal">
+            <div class="registration-header">
+                <button class="close-btn" onclick="closeRegistration()">×</button>
             </div>
-            <section id="slider-container" class="slider-line full-size-row"><div class="slider-pc"><div class="bg-img-holder"><div><picture><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-8098eb8915f21a14c9efefd6277ffc11.jpg.webp" type="image/webp"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a3261106de6444c8353a56a35280c69.jpg.webp" type="image/webp"><source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-418337e58e995097592734489097ed45.jpg"><source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg"><img class="banner-bg" src="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg" alt="Online Slot Games | LuckyMe Slots"></picture></div><img class="mobile-legal" alt="Legal" src="images/de-DE-b7decaa617c03e6d0b5fba915e687cc1.png"></div><div class="offer"><picture><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e34078729f7bbfb401f59f9be09e370f.png.webp" type="image/webp"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-40d82c3f21db2797c00a80fdb87eb621.png.webp" type="image/webp"><source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e61b18a88e426c599a5d0a98cd70efe8.png"><source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-6eb545ca58752046783aeda433b48cbe.png"><img src="images/de-DE-6eb545ca58752046783aeda433b48cbe.png" alt="Online Slot Games | LuckyMe Slots" class="desktop-front reveal"></picture><button class="special offer-but cms-txt cms-txt-3"><div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span></div></button></div><div class="banner-legal cms-txt cms-txt-4" data-nosnippet="true"><div class="text cms-txt-content">Wird bei der Einzahlung automatisch gutgeschrieben. Stornierung kann angefordert werden. Nur die erste Einzahlung. Min. Einzahlung: €10. Spiel: Book of Dead, Spielwert: €0.1. Einsatzanforderung: Innerhalb von 30 Tagen 60 Mal den Freispiel-Gewinnbetrag setzen (nur Spielautomaten zählen). Der maximale Einsatz sind 10 % (min. 0,10 €) des Freispiel-Gewinnbetrags oder 5 € (geringster Betrag gilt). Die Spiele müssen vor der Verwendung von eingezahltem Guthaben gespielt werden. Einzahlungs-/ Willkommensboni dürfen nur einmal innerhalb von 72 Stunden bei allen Betreibern beansprucht werden. <a href="/bonus-policy/">Es gelten die Bonusbedingungen.</a>.</div><img alt="Legal" src="images/de-DE-1f570a62ad6c827e573a19f4fc15acf1.png"></div></div></section>
-            <section class="content-line full-size-row">
-                <div class="area-wrapper">
-                    <div class="feed feed-Terms">
-                        <h1>Verantwortungsbewusstes Spielen</h1>
-                        <div class="terms-page">
-                            <son-license-text><a slot="responsible-link" href="/responsible-gaming/">Glücksspiel kann süchtig machen. Spielen Sie verantwortungsbewusst.</a></son-license-text>
-                        </div><span><style>.terms-page {--license-text-align: left;--license-text-color: #000;--license-text-size: font-size:16px;--license-text-link-color: #007bff;--license-text-link-hover-decoration: underline;--license-text-link-hover-color: #007bff;}</style></span>
-                        <div>
-                            <div son-ce="son-compliance-page">
-                                <h6><strong>94-DL-N</strong></h6>
-                                <h3><strong>Verantwortungsvolles Spielen</strong></h3>
-                                <p><strong>WIR ERMUTIGEN SIE, VERANTWORTUNGSVOLL ZU SPIELEN</strong></p>
-                                <p>Glücksspiel ist eine Form der Unterhaltung, bei der jedoch Verantwortungsbewusstsein angezeigt ist. Es ist keine Möglichkeit, um schnell Geld zu verdienen. Sie sollten auf keinen Fall Verlusten nachjagen. Spielen Sie nie mit Geld, dessen Verlust Sie
-                                    sich nicht leisten könnten, und spielen Sie nie um Geld, das für die Miete, offene Rechnungen oder andere Kosten bestimmt ist. Sie sollten Ihre Aktivitäten regelmäßig auf der Kontostandseite überprüfen, um Ihre Ausgaben im Auge zu behalten.</p>
-                                <p>Falls Sie sich beim Spielen in irgendeiner Weise unbehaglich fühlen, sollten Sie eine Pause einlegen oder sogar einen Selbstausschluss in Betracht ziehen.</p>
-                                <p>Falls Sie Fragen oder ein Anliegen haben, wenden Sie sich bitte an das Kundendienst-Team, das rund um die Uhr zur Verfügung steht und Ihnen gerne hilft.</p>
-                                <p>Um unseren Spielerschutzbeauftragten zu kontaktieren, senden Sie bitte eine E-Mail an spielerschutz@LuckyMeSlots.de</p>
-                                <p><strong>Risiken und Einflüsse des Glücksspiels und der Spielsucht</strong></p>
-                                <p>Für viele Menschen ist Glücksspiel harmloser Spaß und eine Form der Unterhaltung. Das Spiel um Geld birgt jedoch das Risiko, dass der Spieler die Kontrolle darüber verliert, wie viel Zeit und Geld er für das Glücksspiel aufwendet.&nbsp; Diese Art
-                                    des zwanghaften Verhaltens wird oftmals „Spielproblem“ oder „Spielsucht“ genannt.</p>
-                                <p>Ob das Spielverhalten einer Person problematisch ist, lässt sich allerdings nur schwer bestimmen. Eine Faustregel besagt jedoch, dass ein Problem besteht, wenn das Glücksspiel negative Auswirkungen auf die Lebensqualität einer Person hat.</p>
-                                <p><strong>Spielsucht:</strong></p>
-                                <p>Die Diagnose „Spielsucht“ wird in der Regel von einem Arzt oder Psychologen gestellt. Sie können jedoch Spielprobleme haben, ungeachtet davon, ob sie diagnostiziert wurden oder nicht.</p>
-                                <p>Nachfolgend finden Sie eine Reihe von Charakterzügen/Verhaltensweisen, die mit Glücksspiel in Verbindung stehen und Ihnen zeigen, ob Sie ein Spielproblem haben oder an Spielsucht leiden:</p>
-                                <ol>
-                                    <li>Ihre Gedanken drehen sich immer um Glücksspiel.</li>
-                                    <li>Sie müssen um größere Geldsummen spielen, um das angestrebte Glücksgefühl zu verspüren.</li>
-                                    <li>Sie konnten mehrere Male Ihr Spiel nicht kontrollieren, einschränken oder stoppen.</li>
-                                    <li>Sie sind nervös und gereizt, wenn Sie versuchen, Ihr Spiel einzuschränken, oder es gestoppt haben.</li>
-                                    <li>Sie spielen, um Ihre Probleme zu vergessen oder ein schlechtes Gefühl zu lindern, einschließlich des Gefühls der Hilflosigkeit, Schuld, Angst und Depression.</li>
-                                    <li>Sie versuchen, Geld zurückzugewinnen, das Sie beim Spielen verloren haben.</li>
-                                    <li>Sie lügen Verwandte, Therapeuten und andere Menschen an, um den Umfang Ihres Glücksspiels zu verbergen.</li>
-                                    <li>Sie haben aufgrund Ihres Glücksspiels die Beziehung zu einer wichtigen Person, einen Job bzw. eine Studien- oder Karrieremöglichkeit riskiert oder verloren.</li>
-                                    <li>Sie verlassen sich auf andere, um das Geld zum Lösen einer finanziellen Krise zu beschaffen, die aufgrund Ihres Glücksspiels besteht.</li>
-                                </ol>
-                                <p>Spielsucht, missbräuchliches Spielen oder Probleme mit Glücksspiel, egal wie Sie es nennen, ist ein Problem der öffentlichen Gesundheit, das Hunderte oder Tausende von Menschen und ihre Familien betrifft. Spielsucht kann ernsthafte Auswirkungen auf
-                                    die verschiedenen Aspekte im Leben eines Menschen haben, wie zum Beispiel:</p>
-                                <p>Gesundheitliche Folgen: Angst, Depression, Schlafprobleme und Selbstmordgedanken. Sie können auch mit Alkohol und anderen Drogen in Verbindung stehen.</p>
-                                <p>Soziale Folgen: Konflikte mit Verwandten und Freunden, Probleme auf Arbeit oder in der Schule, Kriminalität als Notlösung.</p>
-                                <p>Finanzielle Folgen: Probleme bei der Zahlung von laufenden Kosten oder Schulden als Folge des Glücksspiels.</p>
-                                <p>Sie können Ihre Spielgewohnheiten ändern und es gibt verschiedene Dinge, die Sie tun können, indem Sie unsere Maßnahmen zum verantwortungsvollen Spielen nutzen oder sich professionelle Hilfe von einer gemeinnützigen Organisation suchen, die kostenlose
-                                    Hilfe und Unterstützung bei Spielproblemen und Spielsucht bietet.</p>
-                                <p>Weitere Hilfe und Unterstützung finden Sie unter <a href="http://www.bzga.de/">www.bzga.de/</a></p>
-                                <p><strong>Spiel-Check<br></strong></p>
-                                <p>Spiel-Check ist ein nützliches neues Tool, das Sie im Bereich „Verantwortungsbewusstes Spielen“ in Ihrem Konto finden. Hier können Sie nachverfolgen, wie viel Geld Sie ausgegeben, was Sie gewonnen oder verloren und wie viel Zeit Sie in den letzten
-                                    6 Monaten mit dem Glücksspiel verbracht haben.</p>
-                                <p>Es kann jedoch mehr als nur Ihre Statistiken anzeigen.</p>
-                                <p>Stellen Sie sich Spiel-Check als persönlichen Assistenten für sicheres Spielen vor, der Ihnen zeigt, ob sich Ihre Spielgewohnheiten ändern, Sie mit anderen Spielern vergleicht und Ihnen einen schnellen Gesundheitscheck-Punktestand bietet.</p>
-                                <p>Sie können auch vergleichen, wie viel Sie Ihrer Meinung nach und was Sie tatsächlich ausgegeben haben, und der Spiel-Check sendet Ihnen perfekt zeitlich abgestimmte Warnungen mit personalisierten Tipps für ein sicheres Spiel.</p>
-                                <p>[SPIEL-CHECK ANZEIGEN]</p>
-                                <p><strong>Spielverhalten (Playing Behaviour)</strong></p>
-                                <p>Überprüfen Sie, wie lange Sie gespielt haben und was Sie innerhalb bestimmter Zeiträume insgesamt eingezahlt, ausgezahlt und ausgegeben haben. Sie können auch sehen, ob Sie mehr oder weniger spielen als andere Spieler, die ein ähnliches Profil wie
-                                    Sie haben.</p>
-                                <p><strong>Spielarten (Game Types)</strong></p>
-                                <p>Hier sehen Sie, wie viel Sie auf verschiedene Spielarten gesetzt haben, z. B. Slots, Roulette oder Blackjack.</p>
-                                <p><strong>Trends </strong></p>
-                                <p>Diagramme sind eine schnelle und einfache Möglichkeit zu sehen, wie sich Ihre Glücksspielaktivität in den letzten 4 Wochen verändert hat. Wenn Sie Trends erkennen und die Ursache identifizieren, können wir Ihnen helfen, sofort Maßnahmen zur Kontrolle
-                                    über Ihr Glücksspiel zu ergreifen.</p>
-                                <p><strong>Selbsteinschätzung (Self-Assessment)</strong></p>
-                                <p>Ein wahrheitsgetreues Bild Ihres Glücksspielverhaltens ist für ein sicheres Glücksspiel von entscheidender Bedeutung. Mit dem Selbsteinschätzungstest innerhalb des Spiel-Checks können Sie angeben, wie viel Geld Sie Ihrer Meinung nach in letzter Zeit
-                                    ausgegeben und wie viel Zeit Sie mit dem Glücksspiel verbracht haben, und es mit den tatsächlichen Zahlen vergleichen. Wenn Ihre Einschätzungen stark von der Realität abweichen, ist das ein guter Hinweis darauf, dass Sie Tools wie Einzahlungslimits
-                                    und Zeitalarme verwenden ssollten und gegebenenfalls sogar noch mehr Unterstützung benötigen, um das Spielen unter Kontrolle zu behalten.&nbsp;</p>
-                                <p><strong>Risikobewertung (Risk Score)</strong></p>
-                                <p>Sie erhalten eine schnelle Risikobewertung Ihrer Glücksspielaktivität. Die Punkte werden anhand einer Reihe von Finanzfaktoren berechnet, darunter Gesamteinsätze, Ein- und Auszahlungen, sowie anhand von Spielverwaltungsfaktoren wie der Dauer Ihrer
-                                    Spielsitzungen und der Tageszeit, zu der Sie spielen. Die meisten Spieler, die mit Echtgeld spielen, fallen in die Kategorie „kein Risiko“. Wenn Sie eine Bewertung mit hohem Risiko sehen und wissen möchten, was das bedeutet und was Sie tun können,
-                                    wenden Sie sich bitte an unseren Kundenservice.</p>
-                                <p><strong>Nachrichten/Benachrichtigungen (Messages)</strong></p>
-                                <p>Es ist nicht immer praktisch, Aktivitätsstatistiken während oder nach einer Spielsitzung zu überprüfen. Sie können dennoch personalisierte Benachrichtigungen einstellen, die Sie auf dem Laufenden halten und jede Aktivität hervorheben, über die Sie
-                                    unserer Meinung nach informiert werden sollten. So auch alle Handlungen, die Sie für wichtig erachten.</p>
-                                <p>Wenn Sie bei anderen Spielotheken von SkillOnNet spielen, werden die im Spiel-Check angezeigten Informationen eine Kombination des Spielverhaltens bei diesen Konten sein. Wenn die Spiel-Check-Daten nicht mit den im Bereich „Mein Konto“ angezeigten
-                                    Informationen übereinstimmen, sehen Sie die Informationen unter „Mein Konto“ bitte als die aktuellsten Daten an.</p>
-                                <p><strong>Verantwortungsbewusstes Spielen und Schutzmaßnahmen </strong></p>
-                                <p>Es ist wichtig, dass unsere Kunden in der Spielothek Spaß haben. Wir verstehen aber auch, dass für einige Spieler das Glücksspiel zum Problem werden kann.</p>
-                                <p>Wir legen großen Wert darauf, fair, transparent und sozial verantwortlich zu handeln, und wollen unsere Spieler vor unverantwortlichem Spiel schützen, um ihnen ein unbeschwertes und doch verantwortungsbewusstes Spielerlebnis zu ermöglichen. Deshalb
-                                    geben wir Ihnen die Möglichkeit, Einzahlungsgrenzen oder vollständige Spielerbeschränkungen festzulegen. Diese Funktionen können Ihnen dabei helfen, Ihr Spielverhalten zu kontrollieren. Sie finden sie im Spielothek-Abschnitt „Mein Konto“.</p>
-                                <p><strong>Limits</strong></p>
-                                <p>&nbsp;Wir bieten Ihnen die Möglichkeit, Ihre bevorzugten Einzahlungs-, Verlust- und Einsatzlimits für die folgenden Zeiträume festzulegen:</p>
-                                <ul>
-                                    <li>Täglich</li>
-                                    <li>Wöchentlich</li>
-                                    <li>Monatlich</li>
-                                </ul>
-                                <p>Jede Reduzierung des Limits tritt auf Ihrem Konto sofort in Kraft. Wenn Sie jedoch ein Limit erhöhen möchten, wird die Änderung erst nach 7 Tagen wirksam. Zu diesen Limits zählen alle eingezahlten, verlorenen und gesetzten Beträge auf allen verschiedenen
-                                    Marken, bei denen Sie Ihre Daten registriert haben. Wenn Ihr Konto von einer früheren Lizenz auf diese Lizenz übertragen wurde, werden Einzahlungen/Verluste und Einsätze, die mit der vorherigen Lizenz getätigt wurden, den neu festgelegten Limits
-                                    nicht angerechnet.</p>
-                                <p><strong>Möglichkeit zur Spielbeschränkung (OASIS)</strong></p>
-                                <p>OASIS ist ein zentrales Sperrsystem, das Sie, wenn Sie dort registriert sind, daran hindert, auf einer damit verbundenen Website zu spielen. OASIS bietet eine 24-Stunden-Sperre, die Sie in jedem Spiel über die „Panik-Taste“ aktivieren können. OASIS
-                                    bietet auch längere Sperren mit einer Mindestdauer von 3 Monaten. Ihr Antrag auf eine Sperre wird sofort nach der Einreichung des Antrags bearbeitet. Im Falle einer 24-stündigen Spielpause endet die Kontosperre automatisch, nachdem die 24 Stunden
-                                    verstrichen sind. Um nach einer längeren Sperre wieder zum Glücksspiel zurückzukehren, müssen Einzelpersonen nach dem auf https://rp-darmstadt.hessen.de/sicherheit-und-kommunales/gluecksspiel/spielersperrsystem-oasis/spieler-faqs beschriebenen
-                                    Verfahren unter Verwendung des angegebenen Formulars einen Antrag bei OASIS einreichen. Im Falle einer längerfristigen Sperre werden Sie auch vom Erhalt von Marketingmaterial, das wir versenden, ausgeschlossen. Sie erhalten kein weiteres Marketingmaterial,
-                                    bis der Ausschluss beendet ist, die gesetzlich vorgeschriebene Frist nach dem Ausschluss abgelaufen ist und Sie die Rückkehr zur Website angefordert und Ihre erneute Einwilligung zur Werbung und zur OASIS-Abfrage zu Werbezwecken erteilt haben</p>
-                                <p><strong>Implementierung von Einzahlungslimits</strong></p>
-                                <p>Während der Erstellung eines Kontos über unsere Lizenz in Malta haben Sie die Option, Ihren täglichen, wöchentlichen oder monatlichen Einzahlungsbetrag beliebig zu beschränken.&nbsp;</p>
-                                <p><strong>Steuerung des Zeitlimits</strong></p>
-                                <p>Wir bieten eine Funktion, die Sie nach einer bestimmten Zeit automatisch aus der Spielothek abmeldet. Wenn Sie diese Funktion aktivieren möchten, kontaktieren Sie die Support-Abteilung und geben Sie die Anzahl der Minuten an, nach denen Sie abgemeldet
-                                    werden möchten.</p>
-                                <p><strong>Realitätscheck</strong></p>
-                                <p>Sie haben die Möglichkeit, sich mit der Kundendienstabteilung in Verbindung zu setzen und sie anzuweisen, eine Realitätscheck-Nachricht in Ihrem Konto zu aktivieren und sogar anzuweisen, wie viele Minuten zwischen jeder Realitätscheck-Nachricht vergehen
-                                    sollten.</p>
-                                <p>Nachdem dies aktiviert wurde, erscheint eine Nachricht über Ihren Spielbildschirm, sobald die gewählte Minutenzahl überschritten ist. Diese Nachricht informiert Sie, wie lange Sie schon spielen. Ausgehend von dieser Nachricht haben Sie die Gelegenheit,
-                                    auf eine der folgenden Schaltflächen zu klicken: „Weiter“ schließt die Nachricht. Das Spiel bleibt offen. „Spielhistorie“ ruft Ihren Spielverlauf auf. „Spiel schließen“ schließt das Spiel und meldet Sie ab.</p>
-                                <p><strong>Selbsteinschätzungstest</strong></p>
-                                <p>Ein Selbsteinschätzungstest ist genau, was das Wort sagt ... ein Test, bei dem Sie prüfen können, ob Ihr Glücksspiel für Sie allmählich zum Problem wird. Durch einen Selbsteinschätzungstest können Sie leicht erkennen, ob das Glücksspiel für Sie zum
-                                    Problem wird und handeln, bevor Sie die Kontrolle verlieren.</p>
-                                <p>Falls Sie sich Sorgen über das Glücksspiel machen oder es einfach unter Kontrolle haben möchten, können Sie <a href="https://www.check-dein-spiel.de/tests/selbsttest/" target="_blank" rel="noopener"><u>hier klicken</u></a> um den Selbsteinschätzungstest
-                                    zu machen</p>
-                                <p><strong>Wir behalten die Dinge im Auge</strong></p>
-                                <p>Falls wir Zeichen feststellen, die auf ein Glücksspielproblem bei Ihnen hindeuten, werden wir uns bezüglich unserer Richtlinie für verantwortungsbewusstes Spielen an Sie wenden und die Anwendung von Einzahlungslimits oder anderen Beschränkungen diskutieren.</p>
-                                <p>Sie können die Informationen auf den nachfolgend genannten Websites finden, die Ihnen Hilfe und Rat bieten, wie Probleme mit dem Glücksspiel überwunden werden können:</p>
-                                <ul>
-                                    <li>GA Gamblers Anonymous International: <a href="http://www.gamblersanonymous.org/ga/">gamblersanonymous.org/ga/</a></li>
-                                    <li>Gluecksspielsucht Problem Glücksspiel Hotline: 0800 0776611, <a href="http://www.gluecksspielsucht.de/">gluecksspielsucht.de/</a>&nbsp;&nbsp;</li>
-                                    <li>Evangelische Gesellschaft Stuttgart e.V, 00 49 (0) 711 2054 345, <a href="mailto:spielerberatung@eva-stuttgart.de">spielerberatung@eva-stuttgart.de</a></li>
-                                    <li>Universitätsmedizin Mainz, Kompetenzzentrum Verhaltenssucht, 0049(0)800 1 529 529, <a href="https://www.unimedizin-mainz.de/psychosomatik/forschung-alte-version/kompetenzzentrum-spielerschutz-und-praevention/hotline-verhaltenssucht.html" target="_blank"
-                                        rel="noopener">verhaltenssucht.de</a></li>
-                                </ul>
-                                <p>Sollten Sie sich dazu entschieden haben, dass Sie Unterstützung in Form einer persönlichen Beratung möchten, wenden Sie sich am besten an die jeweilige Landesfachstelle für Glücksspielsucht:</p>
-                                <div class="table-container" style="width: 100%; height: auto; overflow-x: auto;">
-                                    <table width="693">
-                                        <tbody>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="http://lss-bw.de/">Baden-Württemberg</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Wohlfahrtspflege in Baden-Württemberg e. V.</p>
-                                                    <p>Landesstelle für Suchtfragen</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Stauffenbergstrasse 3
-                                                        <br>70173 Stuttgart</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0711 61967-31</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.verspiel-nicht-dein-leben.de/">Bayern</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landesstelle Glücksspielsucht in Bayern</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Edelsbergstraße 10</p>
-                                                    <p>80686 München</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>089 552 735 90</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.berlin-suchtpraevention.de/">Berlin</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landesstelle Berlin für Suchtfragen e.V.</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Chausseestraße 128/129</p>
-                                                    <p>10115 Berlin-Mitte</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>030 293 526 15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.spielsucht-brandenburg.de/">Brandenburg</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Brandenburgische Landesstelle für Suchtfragen e.V.</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Behlertstraße 3A, Haus H1, 14467 Potsdam</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0331 581 380 0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="http://www.gluecksspielsucht-bremen.de/">Bremen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Bremer Fachstelle Glücksspielsucht</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Bürgermeister-Smidt-Str. 35</p>
-                                                    <p>28195 Bremen</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0421 989 792 7</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.automatisch-verloren.de/de">Hamburg</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Hamburgische Landesstelle für Suchtfragen e.V.</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Repsoldstr. 4</p>
-                                                    <p>20097 Hamburg</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>040 284 991 80</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.hls-online.org/">Hessen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Hessische Landesstelle für Suchtfragen e.V.</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Zimmerweg 10</p>
-                                                    <p>60325 Frankfurt am Main</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>069 713 767 77</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.gluecksspielsucht-mv.de/">Mecklenburg-Vorpommern</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Glücksspielsucht Landesfachstelle M-V</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Lübecker Str. 24 a</p>
-                                                    <p>19053 Schwerin</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0385 785 156 0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.nls-online.de/">Niedersachsen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Niedersächsische Landesstelle für Suchtfragen</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Grupenstr. 4</p>
-                                                    <p>30159 Hannover</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0511 626 266 0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.gluecksspielsucht-nrw.de/kontakt.php">Nordrhein-Westfalen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landeskoordinierungsstelle Glücksspielsucht</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Niederwall 51</p>
-                                                    <p>(Eingang Ravensbergerstraße)</p>
-                                                    <p>33602 Bielefeld</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0521 399 558 90</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.lzg-rlp.de/de">Rheinland-Pfalz</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landeszentrale für Gesundheitsförderung in Rheinland-Pfalz</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Hölderlinstraße 8</p>
-                                                    <p>55131 Mainz</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>06131 206 90</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://lssh.de/">Schleswig-Holstein</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Glücksspielsuchthilfe und -Prävention Schleswig-Holstein</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Schreberweg 10</p>
-                                                    <p>D-24119 Kronshagen</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0431 657 394 40</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.gluecksspielsucht-saar.de/">Saarland</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landesfachstelle Glücksspielsucht Saarland</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Haus der Caritas</p>
-                                                    <p>Johannisstraße 2</p>
-                                                    <p>66111 Saarbrücken</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0681 309 069 0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.slsev.de/">Sachsen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Sächsische Landesstelle gegen die Suchtgefahren</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Glacisstraße 26,</p>
-                                                    <p>01099 Dresden</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0351 804 550 6</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://www.ls-suchtfragen-lsa.de/">Sachsen-Anhalt</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Landesstelle für Suchtfragen im Land Sachsen-Anhalt</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Halberstädter Str. 98,</p>
-                                                    <p>39112 Magdeburg</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0391 543 381 8</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="179">
-                                                    <p><a href="https://gluecksspielsucht-thueringen.de/">Thüringen</a></p>
-                                                </td>
-                                                <td width="250">
-                                                    <p>Fachstelle GlücksSpielSucht Thüringen</p>
-                                                </td>
-                                                <td width="128">
-                                                    <p>Dubliner Straße 12,</p>
-                                                    <p>99091 Erfurt</p>
-                                                </td>
-                                                <td width="135">
-                                                    <p>0361 346 174 6</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <p><strong>Wir dulden KEIN Glücksspiel Minderjähriger</strong></p>
-                                <p>Wir erlauben Spielern unter dem Alter von 18 Jahren keine Glücksspiele. Dies ist Bestandteil unserer Allgemeinen Geschäftsbedingungen.</p>
-                                <p>Wir nutzen sowohl automatisierte als auch manuelle Verfahren zur Überprüfung des Alters von Kunden, die ein Konto registrieren. Die Konten von Spielern unter 18 Jahren, werden umgehend geschlossen.</p>
-                                <p><strong>Vermeidung von Glücksspiels Minderjähriger</strong></p>
-                                <p>Wir empfehlen Eltern, Filterprogramme auf ihrem Computer zu installieren, um bestimmte Software und Websites zu sperren. So können Sie kontrollieren, welche Programme Ihre Kinder sehen und verwenden können.</p>
-                                <p>Wir empfehlen dazu folgende Filterprogramme: Cyber Patrol, GamBlock und Net Nanny.</p>
-                                <p>Wir empfehlen auch, folgende Vorsichtsmaßnahmen zu ergreifen:</p>
-                                <ul>
-                                    <li>Kinder sollten nie unbeaufsichtigt an einem Computer gelassen werden.</li>
-                                    <li>Wenn Ihre Kinder das richtige Alter erreichen, sollten Sie ihnen erklären, was Glücksspiel ist und was seine Folgen sind, wenn es außer Kontrolle gerät.</li>
-                                    <li>Aufgrund der beim Glücksspiel entstehenden Gefühle, sollten Sie Kindern nicht erlauben, Ihnen zuzusehen, wenn Sie unsere Spiele spielen.</li>
-                                    <li>Falls Kinder Zugang zu Ihrem Computer haben, empfehlen wir, nicht das Kästchen zu aktivieren, mit dem Ihr Passwort gespeichert wird.</li>
-                                    <li>Erlauben Sie Kindern keinen Zugang zu Ihrer Kreditkarte oder anderen Zahlungsinformationen.</li>
-                                    <li>Auf Ihrem Computer kann für Kinder ein anderes Profil eingerichtet werden, das nur geeignete Software und Internetzugriffsmöglichkeiten bietet. Eltern, die unsere Spiele spielen, können dann ein anderes Profil verwenden.</li>
-                                    <li>Eltern sollten sich über die Gefahren des Glücksspiels Minderjähriger informieren und entsprechend aktiv werden.</li>
-                                </ul>
-                                <p><strong>Unbefugter Zugang zum Konto: Wie Sie ihn verhindern und wie Sie Ihn erkennen</strong></p>
-                                <p>Bei Ihrer liebsten Online-Spielothek können Sie eine Menge Spaß haben und Sie können sich darauf verlassen, dass wir alles unternehmen, um Ihr Spielerlebnis hier sicher zu gestalten. Es gibt jedoch ein paar Dinge, die Sie tun können, um es noch sicherer
-                                    zu machen.</p>
-                                <p>Hier sind einige einfache und doch wirkungsvolle Möglichkeiten, um einen unbefugten Zugriff auf Ihr Konto zu verhindern:</p>
-                                <ul>
-                                    <li>Sagen Sie nie anderen Ihren Benutzernamen oder Ihr Passwort</li>
-                                    <li>Haken Sie das Kästchen „Passwort speichern“ nicht ab</li>
-                                    <li>Achten Sie nach dem Spiel immer darauf, dass Sie sich abgemeldet haben</li>
-                                    <li>Sagen Sie nie anderen Ihren E-Mail-Benutzernamen oder Ihr Passwort</li>
-                                    <li>Haken Sie das Kästchen „Passwort speichern“ für Ihr E-Mail-Konto nicht ab</li>
-                                    <li>Achten Sie immer darauf, dass Sie sich von Ihrem E-Mail-Konto abgemeldet haben, wenn Sie fertig sind</li>
-                                    <li>Größte Sorgfalt ist bei einem gemeinsam genutzten Rechner geboten</li>
-                                </ul>
-                                <p>Hier sind einige Dinge, auf die Sie achten sollten, falls Sie den Eindruck haben, jemand habe auf Ihr Konto zugegriffen:</p>
-                                <ul>
-                                    <li>Kontostand: Notieren Sie sich den Wert bei der Abmeldung und melden Sie Abweichungen</li>
-                                    <li>Spielverlauf: Verfolgen Sie die von Ihnen gespielten Spiele (Sie können vom Kundendienst ein Protokoll der Spiele erhalten, die Sie bei jeder Sitzung gespielt haben)</li>
-                                    <li>Kasse: Achten Sie darauf, dass alle Transaktionen auch wirklich von Ihnen stammen</li>
-                                    <li>Quittungen: Achten Sie auf Transaktionsquittungen in Ihrem Posteingang, wenn Sie wissen, dass Sie nicht gespielt haben</li>
-                                    <li>Falls Sie den Verdacht haben, dass eine andere Person auf Ihr Konto zugegriffen hat, wenden Sie sich unverzüglich an den Kundendienst.</li>
-                                </ul>
-                            </div>
-                            <script>
-                                function openLogin({dl}) {var hash = 'account/login'; if (dl) {hash = 'account/' + dl;} window.location.hash = hash;}
-                            </script>
-                        </div>
-                    </div>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="email">Emailadresse:</label>
+                    <input type="email" id="email" name="email" placeholder="Emailadresse eingeben" required>
                 </div>
-            </section>
-            <footer class="footer-line full-size-row">
-                <div class="footer-wrapper area-wrapper">
-                    <ul id="footer-links">
-                        <li class><a href="privacy.html"><span>Datenschutz</span></a></li>
-                        <li class><a href="terms.html"><span>Nutzungsbedingungen</span></a></li>
-                        <li class><a href="responsible-gaming.html"><span>Verantwortungsbewusstes Spielen</span></a></li>
-                        <li class><a href="/kontakt/index.php"><span>Kontakt</span></a></li>
-                    </ul>
-                    <div class="footer-text upper-text">
-                        <h4> <!-- -->LUCKYME SLOTS – WIR SIND FÜR IHREN GEWINN DABEI!</h4>
-                        <p>
-                            <!-- -->LuckyMe Slots ist eine brandneue, aufregende und unterhaltsame Online-Spielhallemarke mit all den besten und beliebtesten Slot-Spielen, die der Markt zu bieten hat. LuckyMe Slots ist ein erstklassiger Einstieg in die Welt der
-                            Online-Spielhalle, aber auch eine Supergelegenheit für versierte Spieler – denn hier wird eine riesige Auswahl von Spielen für jedes Erfahrungsniveau geboten. Bei LuckyMe Slots gibt es alles: Viel geliebte Slot-Klassiker und
-                            aktionsreiche Spiele in Hochauflösung, sowie 3D Video-Abenteuer.</p>
-                        <p>
-                            <!-- -->Hier bei LuckyMe Slots ist jeder Spieler ein VIP. Hier können Sie sich mal so richtig entspannen, vergnügen und ganz große Gewinne bei den allerneuesten Spielen scheffeln – und dazu gibt es auch noch erstklassige Bonusangebote</p>
-                        <p>
-                            <!-- -->Wenn dies das erste Mal ist, dass Sie sich in einem Online-Spielhalle registrieren, dann können Sie sich ganz besonders freuen. Bei uns können Sie gar nicht anders, als sich gut zu unterhalten, denn wir bieten eine Auswahl
-                            der allerbesten Slots und Video-Maschinen von den besten Spieleanbietern, die es derzeit überhaupt auf dem Markt gibt. Und Sie brauchen sich bei LuckyMe Slot auch keine Sorgen um Sicherheit zu machen: Wir sind lizensiert, reguliert
-                            und haben einen guten Namen in der Branche – und außerdem gehen bei uns die Auszahlungen und Bonusangebote Schlag auf Schlag. Worauf warten Sie noch? Kommen Sie bei uns vorbei! Wir geben Ihnen außerdem sagenhafte 100 Freispiel
-                            für Ihre erste Einzahlung – Sie haben also eine reelle Chance, sofort richtig Geld zu gewinnen</p>
-                        <p>
-                            <!-- -->Sind Sie bereit, ganz groß zu gewinnen? Spielen Sie gleich heute bei LuckyMe Slots und entdecken Sie das Abenteuer Online-Spielhalle.</p>
-                    </div>
-                    <div id="footer-logos"><span><style>:root{--license-logo-item-margin: 0 10px 10px 10px;}</style></span>
-                        <son-license-logos image="light"></son-license-logos>
-                        <div class="primegaming">
-                            <picture>
-                                <source data-srcset="/_next/static/images/KineticDigital-c8bd5e2604d69c181b6be8b5b955f01c.png.webp" type="image/webp" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAF7GlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA3LTIyVDEyOjQ2OjQ1KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNy0yMlQxNDo0NTozMSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNy0yMlQxNDo0NTozMSswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5ZjQyZDRkYy05ZTA5LTIxNDUtODVmNi02OTdlOGJlM2I3ODMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6YTU0NjJjYjAtNjJlOC0yZTQ5LThlYmQtZGMxMTE5MDk1NTUzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YTU0NjJjYjAtNjJlOC0yZTQ5LThlYmQtZGMxMTE5MDk1NTUzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphNTQ2MmNiMC02MmU4LTJlNDktOGViZC1kYzExMTkwOTU1NTMiIHN0RXZ0OndoZW49IjIwMjAtMDctMjJUMTI6NDY6NDUrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OWY0MmQ0ZGMtOWUwOS0yMTQ1LTg1ZjYtNjk3ZThiZTNiNzgzIiBzdEV2dDp3aGVuPSIyMDIwLTA3LTIyVDE0OjQ1OjMxKzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+20uW3QAAABVJREFUCJlj/P//PwMDAwMDEwMUAAAwBgMBuZvuZAAAAABJRU5ErkJggg=="
-                                data-src="/img/optimizable/KineticDigital.png" alt="KineticDigital" class="lazyload" /></picture>
-                            <picture>
-                                <source data-srcset="/_next/static/images/logo-prime-partners-5dc5b0dc5e2f291487ee5b75925a307d.png.webp" type="image/webp" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAF7GlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA3LTIyVDEyOjQ2OjQ1KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNy0yMlQxNDo0NTozMSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNy0yMlQxNDo0NTozMSswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5ZjQyZDRkYy05ZTA5LTIxNDUtODVmNi02OTdlOGJlM2I3ODMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6YTU0NjJjYjAtNjJlOC0yZTQ5LThlYmQtZGMxMTE5MDk1NTUzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YTU0NjJjYjAtNjJlOC0yZTQ5LThlYmQtZGMxMTE5MDk1NTUzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphNTQ2MmNiMC02MmU4LTJlNDktOGViZC1kYzExMTkwOTU1NTMiIHN0RXZ0OndoZW49IjIwMjAtMDctMjJUMTI6NDY6NDUrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OWY0MmQ0ZGMtOWUwOS0yMTQ1LTg1ZjYtNjk3ZThiZTNiNzgzIiBzdEV2dDp3aGVuPSIyMDIwLTA3LTIyVDE0OjQ1OjMxKzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+20uW3QAAABVJREFUCJlj/P//PwMDAwMDEwMUAAAwBgMBuZvuZAAAAABJRU5ErkJggg=="
-                                data-src="/img/optimizable/logo-prime-partners.png" alt="PrimePartners" class="lazyload" /></picture>
-                        </div>
-                    </div>
-                    <div class="footer-text lower-text">
-                        <div son-ce="son-license-text">Diese Seite wird von der Skill On Net Ltd, Office 1/5297 Level G, Quantum House, 75, Abate Rigord Street, Ta’ Xbiex, XBX 1120, Malta, betrieben, deren Director (entspricht dem Geschäftsführer einer deutschen GmbH) Herr Kyriacos
-                            Kyriacou ist. Die Handelsregisternummer (Maltese Business Registry) lautet C 50024. Erreichbarkeit per Telefon: +49 (0)89 38034212 und per E-Mail: kontakt@drückglück.de Die Skill on Net Limited ist ein behördlich zugelassener
-                            Veranstalter von virtuellen Automatenspielen und steht unter der Aufsicht der <a href="https://www.gluecksspiel-behoerde.de/de/" target="_blank">Gemeinsamen Glücksspielbehörde der Länder</a>. Die Erlaubnis wurde am 29.12.22
-                            erteilt, vgl. <a href="https://www.gluecksspiel-behoerde.de/de/erlaubnisfaehigesgluecksspiel/whitelist" target="_blank">WhiteList</a>
-                            <br>
-                            <br><a href="https://son-direct.com/?appName=LuckyMeSlots.dl&langID=8&name=responsible_gaming" target="_blank">Glücksspiel kann süchtig machen. Bitte spiele verantwortungsvoll</a>
-                            <br>
-                        </div>
-                    </div><span><style>.footer-text {--license-text-align: center;--license-text-color: #fff;--license-text-size: font-size:13.6px;--license-text-link-color: ##fff;--license-text-link-hover-decoration: underline;--license-text-link-hover-color: #fff736;}</style></span></div>
-                <div
-                class="footer-coins"></div>
-        </footer>
-        <div class="mask"></div>
-    </div>
-    <div id="footer-fixed-container">
-        <div class="PWA-installer animated-faster pwaSlideInUp" hidden>
-            <div class="PWA-installer-container"><img src="/img/icons/favicon.png" alt="logo" />
-                <div class="PWA-text">Zum LuckyMe Slots Startbildschirm hinzufügen</div>
-            </div><img src="/img/close-w.png" alt="close" /></div>
-    </div>
-    <son-auth-modals></son-auth-modals>
-    </div>
-    <script>
-        (function (w, d, b, s, o) {
-                            w['PGTrackingObject'] = o;w[o] = window[o] || function () {(w[o].q = w[o].q || []).push(arguments);};w[o].b = b;var a = d.createElement('script');var  m = d.getElementsByTagName('script')[0];a.async = true;a.src = b+s;m.parentNode.insertBefore(a, m);
-                })(window, document, '//www.primeapi.com/PrimeServices/ActivityService/', 'Activity.1.2.min.js?v=1.1', 'pg');
-    </script>
-    <script>
-        (function (w, d, b, o) {
-                            w['PGLoggerObject'] = o;
-                            w[o] = w[o] || function () {(w[o].q = w[o].q || []).push(arguments);};
-                            w[o].b = b;
-                            var a = d.createElement('script');
-                            var  m = d.getElementsByTagName('script')[0];
-                            a.async = true;
-                            a.src = b;
-                            m.parentNode.insertBefore(a, m);
-                })(window, document, 'https://www.primeapi.com/player/account.logger.1.0.js?v=1.0', 'pgal');
-    </script>
-    <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"feedState":{"version":1,"title":"","body":"\u003cson-compliance-page type=\"privacy_policy\"\u003e\u003c/son-compliance-page\u003e\u003cscript\u003efunction openLogin({dl}) {var hash = 'account/login'; if (dl) {hash = 'account/'
-        + dl;} window.location.hash = hash;}\u003c/script\u003e","code":"Privacy","culture":"de-DE"}},"initialStoresState":{"gamesStore":{"currencyFactors":{"DKK":{"default":"10","providers":{}},"CAD":{"default":"1","providers":{}},"NZD":{"default":"1","providers":{}},"GBP":{"default":"1","providers":{}},"EUR":{"default":"1","providers":{}},"INR":{"default":"80","providers":{"relax":100,"red_tiger":100,"netent":100,"pragmatic":70,"yggdrasil":100}},"NOK":{"default":"10","providers":{}},"SEK":{"default":"10","providers":{}},"BRL":{"default":"4.5","providers":{"gvg":4.5,"yggdrasil":5,"pragmatic":5,"nyx":4.5,"netent":2,"playngo":2,"red
-        tiger":4,"blueprint":5,"oryx":4,"relax":3,"stakelogic":4.5,"igt":4.5,"edict":5}}}},"uiStore":{},"feedsStore":{"culture":"de-DE","footerFeed":{"license":null,"payments":{"version":1,"title":"Zahlungsoptionen","getPaymentOptions":[{"name":"Paysafecard","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/paysafe.svg","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/paysafe.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/paysafe.png","key":"paysafecard","hasInfo":true,"slag":"paysafecard","slug":"paysafecard"},{"name":"Moneybookers","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/skrill.svg","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/skrill.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/skrill.png","key":"moneybookers","hasInfo":true,"slag":"skrill","slug":"skrill"},{"name":"Neteller","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/neteller.svg","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/neteller.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/neteller.png","key":"neteller","hasInfo":true,"slag":"neteller","slug":"neteller"},{"name":"Payz","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/payz.png","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/payz.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/payz.png","key":"payz","hasInfo":true,"slag":"payz","slug":"payz"},{"name":"Sofort","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/sofort.svg","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/sofort.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/sofort.png","key":"sofort","hasInfo":true,"slag":"sofort","slug":"sofort"},{"name":"Apple
-        Pay","imgUrl":"https://www.primeapi.com/static/feeds/payment-options/apple-pay.png","darkImgUrl":"https://www.primeapi.com/static/feeds/payment-options/black/apple-pay.png","lightImgUrl":"https://www.primeapi.com/static/feeds/payment-options/white/apple-pay.png","key":"apple-pay","hasInfo":false,"slag":"apple-pay","slug":"apple-pay"}]},"bonusPolicy":""}},"configStore":{"culture":"de-DE","mainMenuConfig":{"icons":[{"code":"aboutUs"},{"code":"promotions"},{"code":"contact"},{"code":"OurGames","childs":[{"code":"GameList_de"}]},{"code":"OurFeatures","childs":[{"code":"DailyTournaments"},{"code":"DailyPromotions"},{"code":"QuickCashouts"}]},{"code":"VIPLounge","childs":[{"code":"VIPLounge"},{"code":"Points"},{"code":"VIPLevels"},{"code":"ExecutiveLevels"},{"code":"VIPLoungeFAQ"},{"code":"VIPTermsAndConditions"}]}],"noicons":[]},"bottomMenuConfig":{"icons":[{"code":"affiliates"},{"code":"PrivacyPolicy"},{"code":"TermsAndConditions"},{"code":"bonus"},{"code":"responsible"},{"code":"payments"},{"code":"help"},{"code":"contact"},{"code":"Eula"}],"noicons":[]},"helmetConfig":[{"path":"/","title":"Online
-        Spielhalle | LuckyMe Slots","description":"LuckyMe Slots ist ein führendes Online-Spielhalle für Slots. Holen Sie sich 10 FREISPIELE zum Spielen \u0026 Gewinnen!"},{"path":"/promotions/","title":"LuckyMe Slots Aktionen | LuckyMe Slots","description":""},{"path":"/contact/","title":"Kontakt
-        | LuckyMe Slots","description":""},{"path":"/help/","title":"Häufig gestelle Fragen | LuckyMe Slots","description":""},{"path":"/payment-methods/","title":"Zahlungsmethoden | LuckyMe Slots","description":""},{"path":"/online-slots/","title":"Promotionen
-        - Online Spielhalle | LuckyMe Slots","description":"LuckyMe Slots ist ein führendes Online-Spielhalle für Slots. Holen Sie sich 10 FREISPIELE zum Spielen \u0026 Gewinnen!"},{"path":"/affiliates/","title":"LuckyMe Slots Affiliate Programm","description":""},{"path":"/cookie-policy/","title":"Cookie-Richtlinien
-        | LuckyMe Slots","description":""},{"path":"/terms/","title":"Geschäftsbedingungen | LuckyMe Slots","description":""},{"path":"/bonus-policy/","title":"Zusätzliche Richtlinien | LuckyMe Slots","description":""},{"path":"/privacy/","title":"Zusätzliche
-        Richtlinien | LuckyMe Slots","description":""}]},"trackingStore":{}},"initialReqContext":{"geoInfo":{"culture":"en-ROW","country":"BD","countryName":"Bangladesh","regionName":null,"browserCulture":"en-GB"},"domain":{"name":"luckymeslots.de","host":"www.luckymeslots.de","localCode":"LMDE","aliases":["http://localhost:5000","localhost:5000","http://dev.luckymeslots.de","dev.luckymeslots.de","https://www.luckymeslots.de","www.luckymeslots.de","https://qa.luckymeslots.de","qa.luckymeslots.de","http://local.luckymeslots.de","local.luckymeslots.de"],"api":"www.luckymeslots.de/api/","environmentApi":{"development":"www.luckymeslots.de/api/","production":"www.luckymeslots.de/api/"},"googleAccountId":"UA-4381852-50","googleGtmAccountId":"","facebookAccountId":"","enableClickcase":false,"platformBaseUrl":"https://playsecure.luckymeslots.de","cultures":[{"route":"","culture":"de-DE","name":"Deutsch"}]}},"initialContentContext":{"skinContentContext":{"skin":"LuckyMeSlots","license":"MGA","country":"BD","userCountry":"BD","code":"LM","localCode":"LM","apiCode":"LM","culture":"de-DE","platfomUnderMaintenance":false,"platformUnderMaintenance":false,"currency":{"code":"EUR","euroRate":1},"skillCulture":{"code":"DE","id":8}},"routeContext":{"culture":"de-DE","currency":{"code":"EUR","euroRate":1},"cultureRoute":""}},"routedCulture":"","currentRoute":{"name":"PrivacyPolicy","page":"/FeedPage","params":{}},"localizationData":{"skillCultures":{"default":"EN","cultures":{"EN":{"code":"EN","id":1},"TR":{"code":"TR","id":2},"EL":{"code":"EL","id":3},"RU":{"code":"RU","id":7},"DE":{"code":"DE","id":8},"ES":{"code":"ES","id":10},"IT":{"code":"IT","id":11},"RO":{"code":"RO","id":12},"FR":{"code":"FR","id":13},"SV":{"code":"SV","id":14},"DA":{"code":"DA","id":15},"FI":{"code":"FI","id":16},"HU":{"code":"HU","id":17},"BG":{"code":"BG","id":18},"NO":{"code":"NO","id":20},"PL":{"code":"PL","id":21},"PT":{"code":"PT","id":22},"CZ":{"code":"CZ","id":23},"SK":{"code":"SK","id":24},"HR":{"code":"HR","id":25},"BR":{"code":"pt-BR","id":26},"AR":{"code":"AR","id":6},"HE":{"code":"HE","id":4},"JA":{"code":"JA","id":5},"KA":{"code":"KA","id":19},"TH":{"code":"TH","id":28},"NL":{"code":"NL","id":9}}},"default":"en","cultures":{"en":{"currency":"EUR","skillCulture":"EN"},"en-ROW":{"currency":"EUR","skillCulture":"EN"},"en-EU":{"currency":"EUR","skillCulture":"EN"},"en-GB":{"currency":"GBP","skillCulture":"EN"},"en-NZ":{"currency":"NZD","skillCulture":"EN"},"en-CA":{"currency":"CAD","skillCulture":"EN"},"en-IN":{"currency":"INR","skillCulture":"EN"},"nb-NO":{"currency":"NOK","skillCulture":"NO"},"da":{"currency":"DKK","skillCulture":"DA"},"sv":{"currency":"SEK","skillCulture":"SV"},"pt-BR":{"currency":"BRL","skillCulture":"BR"},"fi":{"currency":"EUR","skillCulture":"FI"},"es":{"currency":"EUR","skillCulture":"ES"},"de":{"currency":"EUR","skillCulture":"DE"},"de-DE":{"currency":"EUR","skillCulture":"DE"}}}},"page":"/FeedPage","query":{},"buildId":"ZLsjAHLkPBPSPBrv6qqjz","isFallback":false,"customServer":true,"gip":true,"appGip":true}</script>
-    <script
-    nomodule src="/_next/static/runtime/polyfills-a5ee9cc7d9e62499ff18.js"></script>
-        <script async data-next-page="/_app" src="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/pages/_app.js"></script>
-        <script async data-next-page="/FeedPage" src="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/pages/FeedPage.js"></script>
-        <script src="/_next/static/runtime/webpack-d1488723af9111add9bd.js" async></script>
-        <script src="/_next/static/chunks/framework.10d288861140c55ee8f8.js" async></script>
-        <script src="/_next/static/chunks/8313d723.2fff9a0ee815729e0be8.js" async></script>
-        <script src="/_next/static/chunks/7a285dac885c6cc212bc7354f408acc1c6b2d3c8.4bf9aa1727c91ffaf38b.js" async></script>
-        <script src="/_next/static/chunks/fab5a8f56c9f17811268a09fcc68c67bdc6aa6ba.35be84d0b8b18450cefa.js" async></script>
-        <script src="/_next/static/chunks/79cba62d236b9fcfb06022d03069d04ad1596fff.ffa8b0d8aacbba058544.js" async></script>
-        <script src="/_next/static/chunks/fbcbc21c835aa760778198ca84e79095489380f5.372c432ce215772a7de3.js" async></script>
-        <script src="/_next/static/chunks/0789fb2cedf608f83f6fad13eac5551cb96a53eb.b15bf0257327b13a4ac8.js" async></script>
-        <script src="/_next/static/chunks/e5c378719fae93a8cce2095769f6c1763d436826_CSS.4f570b4baecd3a67b496.js" async></script>
-        <script src="/_next/static/chunks/e5c378719fae93a8cce2095769f6c1763d436826.6aa37b7d3962e286d9a6.js" async></script>
-        <script src="/_next/static/chunks/styles.11189fa64e4b8233f8ed.js" async></script>
-        <script src="/_next/static/runtime/main-40b9866dd1d60037a278.js" async></script>
-        <script src="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/_buildManifest.js" async></script>
-        <script src="/_next/static/ZLsjAHLkPBPSPBrv6qqjz/_ssgManifest.js" async></script>
-        <script type="text/javascript" src="/modernizr.min.js"></script>
-</body>
+            
+                <div class="form-group">
+                    <label for="username">Benutzername:</label>
+                    <input type="text" id="username" name="username" placeholder="Benutzernamen wählen" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="password">Passwort:</label>
+                    <input type="password" id="password" name="password" placeholder="Passwort wählen" required>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Registrieren</button>
+                </div>
+            </form>
+        </div>
+  
+        <!-- === Overlay for modal background == -->
+        <div class="overlay" id="modal-overlay"></div>
 
+        <script>
+            // Open the registration modal and show the overlay
+            function openRegistration() {
+            document.getElementById('registration-modal').style.display = 'block';
+            document.getElementById('modal-overlay').style.display = 'block';
+            }
+        
+            // Close the registration modal and hide the overlay
+            function closeRegistration() {
+            document.getElementById('registration-modal').style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
+            }
+        
+            // Form submission logic
+            document.getElementById('registration-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+        
+            alert('Registrierung erfolgreich! Wir werden uns in Kürze mit Ihnen in Verbindung setzen.');
+        
+            closeRegistration(); // Close modal after successful registration
+            });
+        </script>
+        <!-- ==================== Registration PopUp Html & JS End ====================== -->
+
+
+
+        <!-- ==================== Site Container Start ========================== -->
+        <div id="__next">
+            <div id="site-container" class="site-container site-container-de-DE">
+
+                <!-- ================== Mobile Sticky Start ====================== -->
+                <div id="beam-mobile" class="rgbeam-header mobile">
+                    <son-beam begambleaware="light" responsible-link="responsible-gaming.html" bonus-policy-link="/bonus-policy/"></son-beam>
+                    <span>
+                        <style>
+                            :root {
+                                --beam-background: #2F3F50;
+                                --beam-font-size: 14px;
+                                --beam-padding: 0;
+                                max-height: 30px
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                :root {
+                                    --beam-font-size: 12px;
+                                }
+                            }
+                        </style>
+                    </span>
+                </div>
+                <!-- ========================= Mobile Sticky End ========================== -->
+
+
+                
+                <!-- ============================== Header Sticky Start ===================== -->
+                <div class="header-sticky">
+                    <div id="beam-desktop" class="rgbeam-header desktop">
+                        <son-beam begambleaware="light" responsible-link="responsible-gaming.html" bonus-policy-link="/bonus-policy/"></son-beam>
+                        <span>
+                            <style>
+                                :root {
+                                    --beam-background: #2F3F50;
+                                    --beam-font-size: 14px;
+                                    --beam-padding: 0;
+                                    max-height: 30px
+                                }
+
+                                @media screen and (max-width: 767px) {
+                                    :root {
+                                        --beam-font-size: 12px;
+                                    }
+                                }
+                            </style>
+                        </span>
+                    </div>
+
+
+
+                    <header class="header-line  full-size-row">
+                        <a class="logo hvr-shrink" href="/">
+                            <span>
+                                <img src="images/newlogoprofi.png" alt="Profi Casino">
+                            </span>
+                        </a>
+
+                        <button id="login-header" class="clean" onclick="openRegistration()">registrieren</button>
+                        <button id="join-header" class="special" type="button"  onclick="openRegistration()">
+                            <div>
+                                <span>Jetzt einloggen</span>
+                                <span class="rounded-circle negative-white-but">
+                                    <span class="triangle"></span>
+                                </span>
+                            </div>
+                        </button>
+                    </header>
+                </div>
+                <!-- ============================== Header Sticky End ===================== -->
+
+
+
+                <!--======================= Privacy Context Start ===========================  -->
+                <section class="content-line full-size-row">
+                    <div class="area-wrapper">
+                        <div class="feed feed-Privacy">
+                            <h1>Verantwortungsvolles Spielen</h1>
+                            <div>
+                                <div son-ce="son-compliance-page">
+                                    <h6><strong>94-DL-N</strong></h6>
+                                    <p><strong>Verantwortungsvolles Spielen</strong></p>
+                                    <p><strong>WIR ERMUTIGEN SIE, VERANTWORTUNGSVOLL ZU SPIELEN</strong></p>
+                                    <p>Glücksspiel ist eine Form der Unterhaltung, bei der jedoch Verantwortungsbewusstsein angezeigt ist. Es ist keine Möglichkeit, um schnell Geld zu verdienen. Sie sollten auf keinen Fall Verlusten nachjagen. Spielen Sie nie mit Geld, dessen Verlust Sie
+                                        sich nicht leisten könnten, und spielen Sie nie um Geld, das für die Miete, offene Rechnungen oder andere Kosten bestimmt ist. Sie sollten Ihre Aktivitäten regelmäßig auf der Kontostandseite überprüfen, um Ihre Ausgaben im Auge zu behalten.</p>
+                                    <p>Falls Sie sich beim Spielen in irgendeiner Weise unbehaglich fühlen, sollten Sie eine Pause einlegen oder sogar einen Selbstausschluss in Betracht ziehen.</p>
+                                    <p>Falls Sie Fragen oder ein Anliegen haben, wenden Sie sich bitte an das Kundendienst-Team, das rund um die Uhr zur Verfügung steht und Ihnen gerne hilft.</p>
+                                    <p>Um unseren Spielerschutzbeauftragten zu kontaktieren, senden Sie bitte eine E-Mail an spielerschutz@LuckyMeSlots.de</p>
+                                    <p><strong>Risiken und Einflüsse des Glücksspiels und der Spielsucht</strong></p>
+                                    <p>Für viele Menschen ist Glücksspiel harmloser Spaß und eine Form der Unterhaltung. Das Spiel um Geld birgt jedoch das Risiko, dass der Spieler die Kontrolle darüber verliert, wie viel Zeit und Geld er für das Glücksspiel aufwendet.&nbsp; Diese Art
+                                        des zwanghaften Verhaltens wird oftmals „Spielproblem“ oder „Spielsucht“ genannt.</p>
+                                    <p>Ob das Spielverhalten einer Person problematisch ist, lässt sich allerdings nur schwer bestimmen. Eine Faustregel besagt jedoch, dass ein Problem besteht, wenn das Glücksspiel negative Auswirkungen auf die Lebensqualität einer Person hat.</p>
+                                    <p><strong>Spielsucht:</strong></p>
+                                    <p>Die Diagnose „Spielsucht“ wird in der Regel von einem Arzt oder Psychologen gestellt. Sie können jedoch Spielprobleme haben, ungeachtet davon, ob sie diagnostiziert wurden oder nicht.</p>
+                                    <p>Nachfolgend finden Sie eine Reihe von Charakterzügen/Verhaltensweisen, die mit Glücksspiel in Verbindung stehen und Ihnen zeigen, ob Sie ein Spielproblem haben oder an Spielsucht leiden:</p>
+                                    <ol>
+                                        <li>Ihre Gedanken drehen sich immer um Glücksspiel.</li>
+                                        <li>Sie müssen um größere Geldsummen spielen, um das angestrebte Glücksgefühl zu verspüren.</li>
+                                        <li>Sie konnten mehrere Male Ihr Spiel nicht kontrollieren, einschränken oder stoppen.</li>
+                                        <li>Sie sind nervös und gereizt, wenn Sie versuchen, Ihr Spiel einzuschränken, oder es gestoppt haben.</li>
+                                        <li>Sie spielen, um Ihre Probleme zu vergessen oder ein schlechtes Gefühl zu lindern, einschließlich des Gefühls der Hilflosigkeit, Schuld, Angst und Depression.</li>
+                                        <li>Sie versuchen, Geld zurückzugewinnen, das Sie beim Spielen verloren haben.</li>
+                                        <li>Sie lügen Verwandte, Therapeuten und andere Menschen an, um den Umfang Ihres Glücksspiels zu verbergen.</li>
+                                        <li>Sie haben aufgrund Ihres Glücksspiels die Beziehung zu einer wichtigen Person, einen Job bzw. eine Studien- oder Karrieremöglichkeit riskiert oder verloren.</li>
+                                        <li>Sie verlassen sich auf andere, um das Geld zum Lösen einer finanziellen Krise zu beschaffen, die aufgrund Ihres Glücksspiels besteht.</li>
+                                    </ol>
+                                    <p>Spielsucht, missbräuchliches Spielen oder Probleme mit Glücksspiel, egal wie Sie es nennen, ist ein Problem der öffentlichen Gesundheit, das Hunderte oder Tausende von Menschen und ihre Familien betrifft. Spielsucht kann ernsthafte Auswirkungen auf
+                                        die verschiedenen Aspekte im Leben eines Menschen haben, wie zum Beispiel:</p>
+                                    <p>Gesundheitliche Folgen: Angst, Depression, Schlafprobleme und Selbstmordgedanken. Sie können auch mit Alkohol und anderen Drogen in Verbindung stehen.</p>
+                                    <p>Soziale Folgen: Konflikte mit Verwandten und Freunden, Probleme auf Arbeit oder in der Schule, Kriminalität als Notlösung.</p>
+                                    <p>Finanzielle Folgen: Probleme bei der Zahlung von laufenden Kosten oder Schulden als Folge des Glücksspiels.</p>
+                                    <p>Sie können Ihre Spielgewohnheiten ändern und es gibt verschiedene Dinge, die Sie tun können, indem Sie unsere Maßnahmen zum verantwortungsvollen Spielen nutzen oder sich professionelle Hilfe von einer gemeinnützigen Organisation suchen, die kostenlose
+                                        Hilfe und Unterstützung bei Spielproblemen und Spielsucht bietet.</p>
+                                    <p>Weitere Hilfe und Unterstützung finden Sie unter <a href="http://www.bzga.de/">www.bzga.de/</a></p>
+                                    <p><strong>Spiel-Check<br></strong></p>
+                                    <p>Spiel-Check ist ein nützliches neues Tool, das Sie im Bereich „Verantwortungsbewusstes Spielen“ in Ihrem Konto finden. Hier können Sie nachverfolgen, wie viel Geld Sie ausgegeben, was Sie gewonnen oder verloren und wie viel Zeit Sie in den letzten
+                                        6 Monaten mit dem Glücksspiel verbracht haben.</p>
+                                    <p>Es kann jedoch mehr als nur Ihre Statistiken anzeigen.</p>
+                                    <p>Stellen Sie sich Spiel-Check als persönlichen Assistenten für sicheres Spielen vor, der Ihnen zeigt, ob sich Ihre Spielgewohnheiten ändern, Sie mit anderen Spielern vergleicht und Ihnen einen schnellen Gesundheitscheck-Punktestand bietet.</p>
+                                    <p>Sie können auch vergleichen, wie viel Sie Ihrer Meinung nach und was Sie tatsächlich ausgegeben haben, und der Spiel-Check sendet Ihnen perfekt zeitlich abgestimmte Warnungen mit personalisierten Tipps für ein sicheres Spiel.</p>
+                                    <p>[SPIEL-CHECK ANZEIGEN]</p>
+                                    <p><strong>Spielverhalten (Playing Behaviour)</strong></p>
+                                    <p>Überprüfen Sie, wie lange Sie gespielt haben und was Sie innerhalb bestimmter Zeiträume insgesamt eingezahlt, ausgezahlt und ausgegeben haben. Sie können auch sehen, ob Sie mehr oder weniger spielen als andere Spieler, die ein ähnliches Profil wie
+                                        Sie haben.</p>
+                                    <p><strong>Spielarten (Game Types)</strong></p>
+                                    <p>Hier sehen Sie, wie viel Sie auf verschiedene Spielarten gesetzt haben, z. B. Slots, Roulette oder Blackjack.</p>
+                                    <p><strong>Trends </strong></p>
+                                    <p>Diagramme sind eine schnelle und einfache Möglichkeit zu sehen, wie sich Ihre Glücksspielaktivität in den letzten 4 Wochen verändert hat. Wenn Sie Trends erkennen und die Ursache identifizieren, können wir Ihnen helfen, sofort Maßnahmen zur Kontrolle
+                                        über Ihr Glücksspiel zu ergreifen.</p>
+                                    <p><strong>Selbsteinschätzung (Self-Assessment)</strong></p>
+                                    <p>Ein wahrheitsgetreues Bild Ihres Glücksspielverhaltens ist für ein sicheres Glücksspiel von entscheidender Bedeutung. Mit dem Selbsteinschätzungstest innerhalb des Spiel-Checks können Sie angeben, wie viel Geld Sie Ihrer Meinung nach in letzter Zeit
+                                        ausgegeben und wie viel Zeit Sie mit dem Glücksspiel verbracht haben, und es mit den tatsächlichen Zahlen vergleichen. Wenn Ihre Einschätzungen stark von der Realität abweichen, ist das ein guter Hinweis darauf, dass Sie Tools wie Einzahlungslimits
+                                        und Zeitalarme verwenden ssollten und gegebenenfalls sogar noch mehr Unterstützung benötigen, um das Spielen unter Kontrolle zu behalten.&nbsp;</p>
+                                    <p><strong>Risikobewertung (Risk Score)</strong></p>
+                                    <p>Sie erhalten eine schnelle Risikobewertung Ihrer Glücksspielaktivität. Die Punkte werden anhand einer Reihe von Finanzfaktoren berechnet, darunter Gesamteinsätze, Ein- und Auszahlungen, sowie anhand von Spielverwaltungsfaktoren wie der Dauer Ihrer
+                                        Spielsitzungen und der Tageszeit, zu der Sie spielen. Die meisten Spieler, die mit Echtgeld spielen, fallen in die Kategorie „kein Risiko“. Wenn Sie eine Bewertung mit hohem Risiko sehen und wissen möchten, was das bedeutet und was Sie tun können,
+                                        wenden Sie sich bitte an unseren Kundenservice.</p>
+                                    <p><strong>Nachrichten/Benachrichtigungen (Messages)</strong></p>
+                                    <p>Es ist nicht immer praktisch, Aktivitätsstatistiken während oder nach einer Spielsitzung zu überprüfen. Sie können dennoch personalisierte Benachrichtigungen einstellen, die Sie auf dem Laufenden halten und jede Aktivität hervorheben, über die Sie
+                                        unserer Meinung nach informiert werden sollten. So auch alle Handlungen, die Sie für wichtig erachten.</p>
+                                    <p>Wenn Sie bei anderen Spielotheken von SkillOnNet spielen, werden die im Spiel-Check angezeigten Informationen eine Kombination des Spielverhaltens bei diesen Konten sein. Wenn die Spiel-Check-Daten nicht mit den im Bereich „Mein Konto“ angezeigten
+                                        Informationen übereinstimmen, sehen Sie die Informationen unter „Mein Konto“ bitte als die aktuellsten Daten an.</p>
+                                    <p><strong>Verantwortungsbewusstes Spielen und Schutzmaßnahmen </strong></p>
+                                    <p>Es ist wichtig, dass unsere Kunden in der Spielothek Spaß haben. Wir verstehen aber auch, dass für einige Spieler das Glücksspiel zum Problem werden kann.</p>
+                                    <p>Wir legen großen Wert darauf, fair, transparent und sozial verantwortlich zu handeln, und wollen unsere Spieler vor unverantwortlichem Spiel schützen, um ihnen ein unbeschwertes und doch verantwortungsbewusstes Spielerlebnis zu ermöglichen. Deshalb
+                                        geben wir Ihnen die Möglichkeit, Einzahlungsgrenzen oder vollständige Spielerbeschränkungen festzulegen. Diese Funktionen können Ihnen dabei helfen, Ihr Spielverhalten zu kontrollieren. Sie finden sie im Spielothek-Abschnitt „Mein Konto“.</p>
+                                    <p><strong>Limits</strong></p>
+                                    <p>&nbsp;Wir bieten Ihnen die Möglichkeit, Ihre bevorzugten Einzahlungs-, Verlust- und Einsatzlimits für die folgenden Zeiträume festzulegen:</p>
+                                    <ul>
+                                        <li>Täglich</li>
+                                        <li>Wöchentlich</li>
+                                        <li>Monatlich</li>
+                                    </ul>
+                                    <p>Jede Reduzierung des Limits tritt auf Ihrem Konto sofort in Kraft. Wenn Sie jedoch ein Limit erhöhen möchten, wird die Änderung erst nach 7 Tagen wirksam. Zu diesen Limits zählen alle eingezahlten, verlorenen und gesetzten Beträge auf allen verschiedenen
+                                        Marken, bei denen Sie Ihre Daten registriert haben. Wenn Ihr Konto von einer früheren Lizenz auf diese Lizenz übertragen wurde, werden Einzahlungen/Verluste und Einsätze, die mit der vorherigen Lizenz getätigt wurden, den neu festgelegten Limits
+                                        nicht angerechnet.</p>
+                                    <p><strong>Möglichkeit zur Spielbeschränkung (OASIS)</strong></p>
+                                    <p>OASIS ist ein zentrales Sperrsystem, das Sie, wenn Sie dort registriert sind, daran hindert, auf einer damit verbundenen Website zu spielen. OASIS bietet eine 24-Stunden-Sperre, die Sie in jedem Spiel über die „Panik-Taste“ aktivieren können. OASIS
+                                        bietet auch längere Sperren mit einer Mindestdauer von 3 Monaten. Ihr Antrag auf eine Sperre wird sofort nach der Einreichung des Antrags bearbeitet. Im Falle einer 24-stündigen Spielpause endet die Kontosperre automatisch, nachdem die 24 Stunden
+                                        verstrichen sind. Um nach einer längeren Sperre wieder zum Glücksspiel zurückzukehren, müssen Einzelpersonen nach dem auf https://rp-darmstadt.hessen.de/sicherheit-und-kommunales/gluecksspiel/spielersperrsystem-oasis/spieler-faqs beschriebenen
+                                        Verfahren unter Verwendung des angegebenen Formulars einen Antrag bei OASIS einreichen. Im Falle einer längerfristigen Sperre werden Sie auch vom Erhalt von Marketingmaterial, das wir versenden, ausgeschlossen. Sie erhalten kein weiteres Marketingmaterial,
+                                        bis der Ausschluss beendet ist, die gesetzlich vorgeschriebene Frist nach dem Ausschluss abgelaufen ist und Sie die Rückkehr zur Website angefordert und Ihre erneute Einwilligung zur Werbung und zur OASIS-Abfrage zu Werbezwecken erteilt haben</p>
+                                    <p><strong>Implementierung von Einzahlungslimits</strong></p>
+                                    <p>Während der Erstellung eines Kontos über unsere Lizenz in Malta haben Sie die Option, Ihren täglichen, wöchentlichen oder monatlichen Einzahlungsbetrag beliebig zu beschränken.&nbsp;</p>
+                                    <p><strong>Steuerung des Zeitlimits</strong></p>
+                                    <p>Wir bieten eine Funktion, die Sie nach einer bestimmten Zeit automatisch aus der Spielothek abmeldet. Wenn Sie diese Funktion aktivieren möchten, kontaktieren Sie die Support-Abteilung und geben Sie die Anzahl der Minuten an, nach denen Sie abgemeldet
+                                        werden möchten.</p>
+                                    <p><strong>Realitätscheck</strong></p>
+                                    <p>Sie haben die Möglichkeit, sich mit der Kundendienstabteilung in Verbindung zu setzen und sie anzuweisen, eine Realitätscheck-Nachricht in Ihrem Konto zu aktivieren und sogar anzuweisen, wie viele Minuten zwischen jeder Realitätscheck-Nachricht vergehen
+                                        sollten.</p>
+                                    <p>Nachdem dies aktiviert wurde, erscheint eine Nachricht über Ihren Spielbildschirm, sobald die gewählte Minutenzahl überschritten ist. Diese Nachricht informiert Sie, wie lange Sie schon spielen. Ausgehend von dieser Nachricht haben Sie die Gelegenheit,
+                                        auf eine der folgenden Schaltflächen zu klicken: „Weiter“ schließt die Nachricht. Das Spiel bleibt offen. „Spielhistorie“ ruft Ihren Spielverlauf auf. „Spiel schließen“ schließt das Spiel und meldet Sie ab.</p>
+                                    <p><strong>Selbsteinschätzungstest</strong></p>
+                                    <p>Ein Selbsteinschätzungstest ist genau, was das Wort sagt ... ein Test, bei dem Sie prüfen können, ob Ihr Glücksspiel für Sie allmählich zum Problem wird. Durch einen Selbsteinschätzungstest können Sie leicht erkennen, ob das Glücksspiel für Sie zum
+                                        Problem wird und handeln, bevor Sie die Kontrolle verlieren.</p>
+                                    <p>Falls Sie sich Sorgen über das Glücksspiel machen oder es einfach unter Kontrolle haben möchten, können Sie <a href="https://www.check-dein-spiel.de/tests/selbsttest/" target="_blank" rel="noopener"><u>hier klicken</u></a> um den Selbsteinschätzungstest
+                                        zu machen</p>
+                                    <p><strong>Wir behalten die Dinge im Auge</strong></p>
+                                    <p>Falls wir Zeichen feststellen, die auf ein Glücksspielproblem bei Ihnen hindeuten, werden wir uns bezüglich unserer Richtlinie für verantwortungsbewusstes Spielen an Sie wenden und die Anwendung von Einzahlungslimits oder anderen Beschränkungen diskutieren.</p>
+                                    <p>Sie können die Informationen auf den nachfolgend genannten Websites finden, die Ihnen Hilfe und Rat bieten, wie Probleme mit dem Glücksspiel überwunden werden können:</p>
+                                    <ul>
+                                        <li>GA Gamblers Anonymous International: <a href="http://www.gamblersanonymous.org/ga/">gamblersanonymous.org/ga/</a></li>
+                                        <li>Gluecksspielsucht Problem Glücksspiel Hotline: 0800 0776611, <a href="http://www.gluecksspielsucht.de/">gluecksspielsucht.de/</a>&nbsp;&nbsp;</li>
+                                        <li>Evangelische Gesellschaft Stuttgart e.V, 00 49 (0) 711 2054 345, <a href="mailto:spielerberatung@eva-stuttgart.de">spielerberatung@eva-stuttgart.de</a></li>
+                                        <li>Universitätsmedizin Mainz, Kompetenzzentrum Verhaltenssucht, 0049(0)800 1 529 529, <a href="https://www.unimedizin-mainz.de/psychosomatik/forschung-alte-version/kompetenzzentrum-spielerschutz-und-praevention/hotline-verhaltenssucht.html" target="_blank"
+                                            rel="noopener">verhaltenssucht.de</a></li>
+                                    </ul>
+                                    <p>Sollten Sie sich dazu entschieden haben, dass Sie Unterstützung in Form einer persönlichen Beratung möchten, wenden Sie sich am besten an die jeweilige Landesfachstelle für Glücksspielsucht:</p>
+                                    <div class="table-container" style="width: 100%; height: auto; overflow-x: auto;">
+                                        <table width="693">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="http://lss-bw.de/">Baden-Württemberg</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Wohlfahrtspflege in Baden-Württemberg e. V.</p>
+                                                        <p>Landesstelle für Suchtfragen</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Stauffenbergstrasse 3
+                                                            <br>70173 Stuttgart</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0711 61967-31</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.verspiel-nicht-dein-leben.de/">Bayern</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landesstelle Glücksspielsucht in Bayern</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Edelsbergstraße 10</p>
+                                                        <p>80686 München</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>089 552 735 90</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.berlin-suchtpraevention.de/">Berlin</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landesstelle Berlin für Suchtfragen e.V.</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Chausseestraße 128/129</p>
+                                                        <p>10115 Berlin-Mitte</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>030 293 526 15</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.spielsucht-brandenburg.de/">Brandenburg</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Brandenburgische Landesstelle für Suchtfragen e.V.</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Behlertstraße 3A, Haus H1, 14467 Potsdam</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0331 581 380 0</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="http://www.gluecksspielsucht-bremen.de/">Bremen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Bremer Fachstelle Glücksspielsucht</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Bürgermeister-Smidt-Str. 35</p>
+                                                        <p>28195 Bremen</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0421 989 792 7</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.automatisch-verloren.de/de">Hamburg</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Hamburgische Landesstelle für Suchtfragen e.V.</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Repsoldstr. 4</p>
+                                                        <p>20097 Hamburg</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>040 284 991 80</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.hls-online.org/">Hessen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Hessische Landesstelle für Suchtfragen e.V.</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Zimmerweg 10</p>
+                                                        <p>60325 Frankfurt am Main</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>069 713 767 77</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.gluecksspielsucht-mv.de/">Mecklenburg-Vorpommern</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Glücksspielsucht Landesfachstelle M-V</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Lübecker Str. 24 a</p>
+                                                        <p>19053 Schwerin</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0385 785 156 0</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.nls-online.de/">Niedersachsen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Niedersächsische Landesstelle für Suchtfragen</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Grupenstr. 4</p>
+                                                        <p>30159 Hannover</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0511 626 266 0</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.gluecksspielsucht-nrw.de/kontakt.php">Nordrhein-Westfalen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landeskoordinierungsstelle Glücksspielsucht</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Niederwall 51</p>
+                                                        <p>(Eingang Ravensbergerstraße)</p>
+                                                        <p>33602 Bielefeld</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0521 399 558 90</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.lzg-rlp.de/de">Rheinland-Pfalz</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landeszentrale für Gesundheitsförderung in Rheinland-Pfalz</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Hölderlinstraße 8</p>
+                                                        <p>55131 Mainz</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>06131 206 90</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://lssh.de/">Schleswig-Holstein</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Glücksspielsuchthilfe und -Prävention Schleswig-Holstein</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Schreberweg 10</p>
+                                                        <p>D-24119 Kronshagen</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0431 657 394 40</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.gluecksspielsucht-saar.de/">Saarland</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landesfachstelle Glücksspielsucht Saarland</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Haus der Caritas</p>
+                                                        <p>Johannisstraße 2</p>
+                                                        <p>66111 Saarbrücken</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0681 309 069 0</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.slsev.de/">Sachsen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Sächsische Landesstelle gegen die Suchtgefahren</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Glacisstraße 26,</p>
+                                                        <p>01099 Dresden</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0351 804 550 6</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://www.ls-suchtfragen-lsa.de/">Sachsen-Anhalt</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Landesstelle für Suchtfragen im Land Sachsen-Anhalt</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Halberstädter Str. 98,</p>
+                                                        <p>39112 Magdeburg</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0391 543 381 8</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="179">
+                                                        <p><a href="https://gluecksspielsucht-thueringen.de/">Thüringen</a></p>
+                                                    </td>
+                                                    <td width="250">
+                                                        <p>Fachstelle GlücksSpielSucht Thüringen</p>
+                                                    </td>
+                                                    <td width="128">
+                                                        <p>Dubliner Straße 12,</p>
+                                                        <p>99091 Erfurt</p>
+                                                    </td>
+                                                    <td width="135">
+                                                        <p>0361 346 174 6</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p><strong>Wir dulden KEIN Glücksspiel Minderjähriger</strong></p>
+                                    <p>Wir erlauben Spielern unter dem Alter von 18 Jahren keine Glücksspiele. Dies ist Bestandteil unserer Allgemeinen Geschäftsbedingungen.</p>
+                                    <p>Wir nutzen sowohl automatisierte als auch manuelle Verfahren zur Überprüfung des Alters von Kunden, die ein Konto registrieren. Die Konten von Spielern unter 18 Jahren, werden umgehend geschlossen.</p>
+                                    <p><strong>Vermeidung von Glücksspiels Minderjähriger</strong></p>
+                                    <p>Wir empfehlen Eltern, Filterprogramme auf ihrem Computer zu installieren, um bestimmte Software und Websites zu sperren. So können Sie kontrollieren, welche Programme Ihre Kinder sehen und verwenden können.</p>
+                                    <p>Wir empfehlen dazu folgende Filterprogramme: Cyber Patrol, GamBlock und Net Nanny.</p>
+                                    <p>Wir empfehlen auch, folgende Vorsichtsmaßnahmen zu ergreifen:</p>
+                                    <ul>
+                                        <li>Kinder sollten nie unbeaufsichtigt an einem Computer gelassen werden.</li>
+                                        <li>Wenn Ihre Kinder das richtige Alter erreichen, sollten Sie ihnen erklären, was Glücksspiel ist und was seine Folgen sind, wenn es außer Kontrolle gerät.</li>
+                                        <li>Aufgrund der beim Glücksspiel entstehenden Gefühle, sollten Sie Kindern nicht erlauben, Ihnen zuzusehen, wenn Sie unsere Spiele spielen.</li>
+                                        <li>Falls Kinder Zugang zu Ihrem Computer haben, empfehlen wir, nicht das Kästchen zu aktivieren, mit dem Ihr Passwort gespeichert wird.</li>
+                                        <li>Erlauben Sie Kindern keinen Zugang zu Ihrer Kreditkarte oder anderen Zahlungsinformationen.</li>
+                                        <li>Auf Ihrem Computer kann für Kinder ein anderes Profil eingerichtet werden, das nur geeignete Software und Internetzugriffsmöglichkeiten bietet. Eltern, die unsere Spiele spielen, können dann ein anderes Profil verwenden.</li>
+                                        <li>Eltern sollten sich über die Gefahren des Glücksspiels Minderjähriger informieren und entsprechend aktiv werden.</li>
+                                    </ul>
+                                    <p><strong>Unbefugter Zugang zum Konto: Wie Sie ihn verhindern und wie Sie Ihn erkennen</strong></p>
+                                    <p>Bei Ihrer liebsten Online-Spielothek können Sie eine Menge Spaß haben und Sie können sich darauf verlassen, dass wir alles unternehmen, um Ihr Spielerlebnis hier sicher zu gestalten. Es gibt jedoch ein paar Dinge, die Sie tun können, um es noch sicherer
+                                        zu machen.</p>
+                                    <p>Hier sind einige einfache und doch wirkungsvolle Möglichkeiten, um einen unbefugten Zugriff auf Ihr Konto zu verhindern:</p>
+                                    <ul>
+                                        <li>Sagen Sie nie anderen Ihren Benutzernamen oder Ihr Passwort</li>
+                                        <li>Haken Sie das Kästchen „Passwort speichern“ nicht ab</li>
+                                        <li>Achten Sie nach dem Spiel immer darauf, dass Sie sich abgemeldet haben</li>
+                                        <li>Sagen Sie nie anderen Ihren E-Mail-Benutzernamen oder Ihr Passwort</li>
+                                        <li>Haken Sie das Kästchen „Passwort speichern“ für Ihr E-Mail-Konto nicht ab</li>
+                                        <li>Achten Sie immer darauf, dass Sie sich von Ihrem E-Mail-Konto abgemeldet haben, wenn Sie fertig sind</li>
+                                        <li>Größte Sorgfalt ist bei einem gemeinsam genutzten Rechner geboten</li>
+                                    </ul>
+                                    <p>Hier sind einige Dinge, auf die Sie achten sollten, falls Sie den Eindruck haben, jemand habe auf Ihr Konto zugegriffen:</p>
+                                    <ul>
+                                        <li>Kontostand: Notieren Sie sich den Wert bei der Abmeldung und melden Sie Abweichungen</li>
+                                        <li>Spielverlauf: Verfolgen Sie die von Ihnen gespielten Spiele (Sie können vom Kundendienst ein Protokoll der Spiele erhalten, die Sie bei jeder Sitzung gespielt haben)</li>
+                                        <li>Kasse: Achten Sie darauf, dass alle Transaktionen auch wirklich von Ihnen stammen</li>
+                                        <li>Quittungen: Achten Sie auf Transaktionsquittungen in Ihrem Posteingang, wenn Sie wissen, dass Sie nicht gespielt haben</li>
+                                        <li>Falls Sie den Verdacht haben, dass eine andere Person auf Ihr Konto zugegriffen hat, wenden Sie sich unverzüglich an den Kundendienst.</li>
+                                    </ul>
+                                </div>
+                                <script>
+                                    function openLogin({dl}) {var hash = 'account/login'; if (dl) {hash = 'account/' + dl;} window.location.hash = hash;}
+                                </script>
+                            </div>
+                        </div>   
+                    </div>
+                </section>
+                <!--======================= Privacy Context End ===========================  -->
+
+
+                
+                <!-- ====================== Footer Start ========================== -->
+                <footer class="footer-line full-size-row">
+                    <div class="footer-wrapper area-wrapper">
+
+                        <ul id="footer-links">
+                            <li class>
+                                <a href="privacy.html" target="_blank"><span>Datenschutz</span></a>
+                            </li>
+
+                            <li class>
+                                <a href="terms.html" target="_blank"><span>Nutzungsbedingungen</span></a>
+                            </li>
+
+                            <li class>
+                                <a href="bonus-policy.html" target="_blank"><span>Bonusrichtlinie</span></a>
+                            </li>
+
+                            <li class>
+                                <a href="responsible-gaming.html" target="_blank"><span>Verantwortungsbewusstes Spielen</span></a>
+                            </li>
+
+                            <li class>
+                                <a href="/kontakt/index.php"><span>Kontakt</span></a>
+                            </li>
+                        </ul>
+
+
+                        <div class="footer-text upper-text">
+                            <h4>Profi Casino – WIR SIND FÜR IHREN GEWINN DABEI!</h4>
+
+                            <p>Profi Casino ist eine brandneue, aufregende und unterhaltsame Online-Spielhallemarke mit all den besten und beliebtesten Slot-Spielen, die der Markt zu bieten hat. Profi Casino ist ein erstklassiger Einstieg in die Welt der Online-Spielhalle, aber auch eine Supergelegenheit für versierte Spieler – denn hier wird eine riesige Auswahl von Spielen für jedes Erfahrungsniveau geboten. Bei Profi Casino gibt es alles: Viel geliebte Slot-Klassiker und aktionsreiche Spiele in Hochauflösung, sowie 3D Video-Abenteuer.</p>
+
+                            <p>Hier bei Profi Casino ist jeder Spieler ein VIP. Hier können Sie sich mal so richtig entspannen, vergnügen und ganz große Gewinne bei den allerneuesten Spielen scheffeln – und dazu gibt es auch noch erstklassige Bonusangebote</p>
+
+                            <p>Wenn dies das erste Mal ist, dass Sie sich in einem Online-Spielhalle registrieren, dann können Sie sich ganz besonders freuen. Bei uns können Sie gar nicht anders, als sich gut zu unterhalten, denn wir bieten eine Auswahl der allerbesten Slots und Video-Maschinen von den besten Spieleanbietern, die es derzeit überhaupt auf dem Markt gibt. Und Sie brauchen sich bei LuckyMe Slot auch keine Sorgen um Sicherheit zu machen: Wir sind lizensiert, reguliert und haben einen guten Namen in der Branche – und außerdem gehen bei uns die Auszahlungen und Bonusangebote Schlag auf Schlag. Worauf warten Sie noch? Kommen Sie bei uns vorbei! Wir geben Ihnen außerdem sagenhafte 100 Freispiel für Ihre erste Einzahlung – Sie haben also eine reelle Chance, sofort richtig Geld zu gewinnen</p>
+
+                            <p>Sind Sie bereit, ganz groß zu gewinnen? Spielen Sie gleich heute bei Profi Casino und entdecken Sie das Abenteuer Online-Spielhalle.</p>
+                        </div>
+                        
+                        <div id="footer-logos"><span><style>:root{--license-logo-item-margin: 0 10px 10px 10px;}</style></span>
+                            <son-license-logos image="light"></son-license-logos>
+                            <div class="primegaming">
+                                <picture>
+                                    <source data-srcset="images/KineticDigital-c8bd5e2604d69c181b6be8b5b955f01c.png.webp" type="image/webp" srcset="images/KineticDigital-c8bd5e2604d69c181b6be8b5b955f01c.png.webp"><img src="/img/optimizable/KineticDigital.png" data-src="/img/optimizable/KineticDigital.png" alt="KineticDigital" class=" ls-is-cached lazyloaded">
+                                </picture>
+
+                                <picture>
+                                    <source data-srcset="images/logo-prime-partners-5dc5b0dc5e2f291487ee5b75925a307d.png.webp" type="image/webp" srcset="images/logo-prime-partners-5dc5b0dc5e2f291487ee5b75925a307d.png.webp"><img src="/img/optimizable/logo-prime-partners.png" data-src="/img/optimizable/logo-prime-partners.png" alt="PrimePartners" class=" ls-is-cached lazyloaded">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="footer-text lower-text">
+                            <div son-ce="son-license-text">Diese Seite wird von der Skill On Net Ltd, Office 1/5297 Level G, Quantum House, 75, Abate Rigord Street, Ta’ Xbiex, XBX 1120, Malta, betrieben, deren Director (entspricht dem Geschäftsführer einer deutschen GmbH) Herr Kyriacos
+                                Kyriacou ist. Die Handelsregisternummer (Maltese Business Registry) lautet C 50024. Erreichbarkeit per Telefon: +49 (0)89 38034212 und per E-Mail: kontakt@drückglück.de Die Skill on Net Limited ist ein behördlich zugelassener
+                                Veranstalter von virtuellen Automatenspielen und steht unter der Aufsicht der <a href="https://www.gluecksspiel-behoerde.de/de/" target="_blank">Gemeinsamen Glücksspielbehörde der Länder</a>. Die Erlaubnis wurde am 29.12.22
+                                erteilt, vgl. <a href="https://www.gluecksspiel-behoerde.de/de/erlaubnisfaehigesgluecksspiel/whitelist" target="_blank">WhiteList</a>
+                                <br>
+                                <br><a href="responsible-gaming.html" target="_blank">Glücksspiel kann süchtig machen. Bitte spiele verantwortungsvoll</a>
+                                <br>
+                            </div>
+                        </div><span><style>.footer-text {--license-text-align: center;--license-text-color: #fff;--license-text-size: font-size:13.6px;--license-text-link-color: ##fff;--license-text-link-hover-decoration: underline;--license-text-link-hover-color: #fff736;}</style></span>
+                    </div>
+                    <div class="footer-coins"></div>
+                </footer>
+                <!-- ====================== Footer End ========================== -->
+            </div>
+        </div>
+    </body>
 </html>

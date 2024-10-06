@@ -7,7 +7,7 @@
 
 
         <!-- ================ Title & Fav ============================ -->
-        <title>Online Spielhalle | Profi Casino</title>
+        <title>Registrieren | Profi Casino</title>
         <link rel="shortcut icon" href="images/free_games.png" type="image/x-icon">
 
 
@@ -269,6 +269,127 @@
               z-index: 100000;
             }
         </style>
+
+        <style>
+            .signup-container {
+                background: white;
+                max-width: 450px;
+                width: 100%;
+                padding: 45px 25px 25px 25px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                margin: 60px auto;
+                position: relative;
+            }
+
+            .input-group {
+                margin-bottom: 25px;
+            }
+
+            .input-group label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: #444;
+            }
+
+            .input-group input {
+                width: calc(100% - 20px);
+                padding: 12px;
+                margin: 0 auto;
+                display: block;
+                font-size: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .signup-submit-btn {
+                background-color: #009fd6 !important;
+                border: none;
+                color: #fff;
+                padding: 22px 25px !important;
+                font-size: 18px !important;
+                border-radius: 0px !important;
+                cursor: pointer;
+                letter-spacing: 0.2px;
+                width: 100%;
+                font-weight: bold;
+            }
+
+            .signup-submit-btn:hover {
+                background-color: #003f7f !important;
+            }
+
+            .alert-box {
+                display: none;
+                position: fixed; 
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #ffffff;
+                color: #000000;
+                padding: 30px 25px 45px 25px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 33%);
+                z-index: 100001;
+                width: 100%;
+                max-width: 425px;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h3.alert-h3 {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26px;
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+
+            h3.alert-h3 img {
+                width: 20px;
+                margin-right: 6px;
+                position: relative;
+                top: 2px;
+            }
+
+            .alert-message {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 2px;
+                line-height: 24px;
+            }
+
+            .alert-close-btn {
+                position: absolute;
+                right: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                color: white;
+                transform: translate(-5px, -15px);
+                background: #003f7f;
+                padding: 6px 12px;
+                bottom: 0;
+            }
+
+            .alert-close-btn:hover {
+                color: #f1f1f1;
+            }
+
+            #overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(0 0 0 / 88%);
+                z-index: 10000;
+            }
+        </style>
     </head>
     
 
@@ -403,160 +524,64 @@
                 <!-- ============================== Header Sticky End ===================== -->
 
 
+                <!-- ==================== Registration PopUp Html & JS Start ====================== -->
+                <section>
+                    <div class="area-wrapper games-hp-wrapper">
+                        <h2>Registrieren</h2>
 
-                <!-- ======================== Slider Background Image & Bonus Start  ========================== -->
-                <section id="slider-container" class="slider-line full-size-row">
-                    <div class="slider-pc">
-                        <div class="bg-img-holder">
-                            <div>
-                                <picture>
-                                    <source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-8098eb8915f21a14c9efefd6277ffc11.jpg.webp" type="image/webp">
-                                    <source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a3261106de6444c8353a56a35280c69.jpg.webp" type="image/webp">
-                                    <source class="cms-img cms-img-0" media="(min-width: 768px)" srcset="images/desktop-home-de-418337e58e995097592734489097ed45.jpg">
-                                    <source class="cms-img cms-img-2" media="(max-width: 767px)" srcset="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg">
-                                    <img class="banner-bg" src="images/mobile-home-de-4a04889dbb40f766d6466c02e1a27676.jpg" alt="Online Slot Games | Profi Casino">
-                                </picture>
-                            </div>
-                            <img class="mobile-legal" alt="Legal" src="images/de-DE-b7decaa617c03e6d0b5fba915e687cc1.png">
-                        </div>
-
-
-                        <div class="offer">
-                            <picture>
-                                <source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e34078729f7bbfb401f59f9be09e370f.png.webp" type="image/webp">
-                                <source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-40d82c3f21db2797c00a80fdb87eb621.png.webp" type="image/webp">
-                                <source class="cms-img cms-img-1" media="(min-width: 768px)" srcset="images/de-DE-e61b18a88e426c599a5d0a98cd70efe8.png">
-                                <source class="cms-img cms-img-3" media="(max-width: 767px)" srcset="images/de-DE-6eb545ca58752046783aeda433b48cbe.png"><img src="images/de-DE-6eb545ca58752046783aeda433b48cbe.png" alt="Online Slot Games | Profi Casino" class="desktop-front reveal">
-                            </picture>
-
-                            <button class="special offer-but cms-txt cms-txt-3" onclick="openRegistration()">
-                                <div>
-                                    <span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span>
+                        <!-- Registration container -->
+                        <div class="signup-container">
+                            <form id="signup-form">
+                                <div class="input-group">
+                                    <label for="user-email">Emailadresse:</label>
+                                    <input type="email" id="user-email" name="user-email" placeholder="Emailadresse eingeben" required>
                                 </div>
-                            </button>
-                        </div>
-
-                        <div class="banner-legal cms-txt cms-txt-4" data-nosnippet="true">
-                            <div class="text cms-txt-content">Wird bei der Einzahlung automatisch gutgeschrieben. Stornierung kann angefordert werden. Nur die erste Einzahlung. Min. Einzahlung: €10. Spiel: Book of Dead, Spielwert: €0.1. Einsatzanforderung: Innerhalb von 30 Tagen 60 Mal den Freispiel-Gewinnbetrag setzen (nur Spielautomaten zählen). Der maximale Einsatz sind 10 % (min. 0,10 €) des Freispiel-Gewinnbetrags oder 5 € (geringster Betrag gilt). Die Spiele müssen vor der Verwendung von eingezahltem Guthaben gespielt werden. Einzahlungs-/Willkommensboni dürfen nur einmal innerhalb von 72 Stunden bei allen Betreibern beansprucht werden. <a href="bonus-policy.html" target="_blank">Es gelten die Bonusbedingungen.</a>.
-                            </div>
-                            <img alt="Legal" src="images/de-DE-1f570a62ad6c827e573a19f4fc15acf1.png">
-                        </div>
-                    </div>
-                </section>
-                <!-- ======================== Slider Background Image & Bonus Start  ========================== -->
-
-
-
-                <!-- ======================== Game Slot Spiele Start ====================== -->
-                <section class="games-hp-line full-size-row">
-                    <div class="games-hp-line-inner">
-                        <div class="area-wrapper games-hp-wrapper">
-
-                            <h2>Über 1000 Slot-Spiele</h2>
-
-                            <div id="games-hp">
-                                <div class="game-box">
-                                    <div class="img-wrap">
-                                        <img src="images/fg-9543.jpg" alt="Book of Dead">
-                                    </div>
-
-                                    <div class="game-name">
-                                        <div class="game-logo animated" style="background-image: url('images/logo-9543.jpg');"></div>
-
-                                        <div class="game-cta animated fadeIn">
-                                            <button class="special" onclick="openRegistration()">
-                                                <div>
-                                                    <span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span>
-                                                </div>
-                                            </button>
-                                            
-                                            <div>
-                                                <a onclick="openRegistration()" class="game-link" role="button" style="cursor: pointer;">Book of Dead</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mobile-game-name">
-                                        <div>
-                                            <a onclick="openRegistration()" class="game-link" role="button" style="cursor: pointer;">Book of Dead</a>
-                                        </div>
-                                    </div>
+                            
+                                <div class="input-group">
+                                    <label for="user-username">Benutzername:</label>
+                                    <input type="text" id="user-username" name="user-username" placeholder="Benutzernamen wählen" required>
                                 </div>
-
-
-                                <div class="game-box">
-                                    <div class="img-wrap"><img src="images/fg-9928.jpg" alt="Fire Joker Freeze"></div>
-                                    <div class="game-name">
-                                        <div class="game-logo animated" style="background-image: url('images/logo-9928.jpg');"></div>
-
-                                        <div class="game-cta animated fadeIn">
-                                            <button class="special" onclick="openRegistration()">
-                                                <div><span>Spielen</span><span class="rounded-circle"><span class="triangle"></span></span>
-                                                </div>
-                                            </button>
-
-                                            <div>
-                                                <a onclick="openRegistration()" class="game-link" role="button" style="cursor: pointer;">Fire Joker Freeze</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mobile-game-name">
-                                        <div>
-                                            <a onclick="openRegistration()" class="game-link" role="button" style="cursor: pointer;">Fire Joker Freeze</a>
-                                        </div>
-                                    </div>
+                            
+                                <div class="input-group">
+                                    <label for="user-password">Passwort:</label>
+                                    <input type="password" id="user-password" name="user-password" placeholder="Passwort wählen" required>
                                 </div>
-                            </div>
+                            
+                                <div class="input-group">
+                                    <button type="submit" class="signup-submit-btn">Registrieren</button>
+                                </div>
+                            
+                                <!-- Alert box fixed inside the form area -->
+                                <div id="success-alert" class="alert-box">
+                                    <h3 class="alert-h3"><img src="images/globe.png" alt="">proficasino.com</h3>
+                                    <p class="alert-message">Registrierung erfolgreich! Wir werden uns in Kürze mit Ihnen in Verbindung setzen.</p>
+                                    <span class="alert-close-btn">OK</span>
+                                </div>
+                            </form>
                         </div>
                     </div>
+
+                    <!-- Overlay -->
+                    <div id="overlay"></div>
                 </section>
-                <!-- ======================== Game Slot Spiele End ====================== -->
 
+                <script>
+                    // Form submission logic
+                    document.getElementById('signup-form').addEventListener('submit', function(e) {
+                        e.preventDefault(); // Prevent form submission
 
+                        // Show the alert box and overlay
+                        document.getElementById('success-alert').style.display = 'flex';
+                        document.getElementById('overlay').style.display = 'block';
+                    });
 
-                <!-- ======================= Feature Start ============================= -->
-                <section class="features-line full-size-row">
-                    <div class="area-wrapper" id="features">
-                        <div>
-                            <img src="images/free_games.png" alt="Daily Promotions"/>
-                            <h3>Tägliche Promotionen</h3>
-                        </div>
-
-                        <div>
-                            <img src="images/cashouts.png" alt="Quick Cashouts"/>
-                            <h3>Schnelle Auszahlung</h3>
-                        </div>
-
-                        <div>
-                            <img src="images/free_games.png" alt="Daily Tournaments"/>
-                            <h3>Tägliche Turniere</h3>
-                        </div>
-                    </div>
-                </section>
-                <!-- ======================= Feature End ============================= -->
-
-
-
-                <!-- ====================== Content Start ============================ -->
-                <section class="content-line full-size-row content-buttons seo-block">
-                    <div class="page-seperator"></div>
-                    <div class="seo-home">
-                        <div class="page-seperator"></div>
-                        <div class="area-wrapper">
-                            <section class="overview-line full-size-row">
-                                <h1>Online-Slots</h1>
-
-                                <p>Wenn wir sagen, dass Profi Casino das spannendste, unterhaltsamste und aufregendste Online-Spielhalle der Welt ist, dann ist das nicht bloß so dahin gesagt! Die wunderschönen Spieledesigns bieten ein absolut immersives Spielerlebnis mit bunten 3D-Effekten, Mega-Bonusangeboten, spannenden Spielsequenzen und fantastischen Handlungsabläufen.</p>
-
-                                <p>Profi Casino ist mehr als nur ein hübsches Gesicht. Wir bieten tägliche Promotionen und Bonusangebote, um Ihr Spielerlebnis noch mehr zu verbessern. Dank unserer täglichen Turniere haben unsere Gamer jeden Tag die Chance zu gewinnen.</p>
-
-                                <p>Haben Sie Lust, sich der schrecklichen Medusa zu stellen? Möchten Sie Jack auf der Bohnenranke hinterher klettern? Oder vielleicht träumen Sie davon, einen Tag mit einem magischen Flaschengeist zu verbringen? Bei unserem Slot-Angebot sind der Fantasie keine Grenzen gesetzt. Absolut. Keine. Grenzen! Auf was für ein Abenteuer haben Sie heute Lust? Probieren Sie Ihr Glück an einem unserer vielen Slots.</p>
-                            </section>
-                        </div>
-                    </div>
-                </section>
-                <!-- ====================== Content End ============================ -->
+                    // Close alert box logic
+                    document.querySelector('.alert-close-btn').addEventListener('click', function() {
+                        document.getElementById('success-alert').style.display = 'none';
+                        document.getElementById('overlay').style.display = 'none'; // Hide overlay
+                    });
+                </script>
+                <!-- ==================== Registration PopUp Html & JS End ====================== -->
 
 
 
