@@ -247,7 +247,7 @@ div.footer-text			{margin-bottom:30px; font-size:1.2rem; line-height:135%; color
 /**** Footer Coins ****/
 .footer-coins {
 	height: 78px; margin-top: 15px;
-	background: url('/img/footer-coins.png') no-repeat center center / contain;
+	background: url('https://www.luckymeslots.de/img/footer-coins.png') no-repeat center center / contain;
 }
 
 @media screen and (max-width: 1024px) {
